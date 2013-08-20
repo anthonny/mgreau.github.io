@@ -5,3 +5,6 @@ branches:
   only:
   - develop
 script: rake travis
+env:
+  global:
+  - secure: "glcp6ILFczVIpjtHanWNsGatA76QvlK8eXo65kB4cEJz4bvj8qU2sdGvUyBiG1LUZQYVxjPaNmDFTntXCk30fZXYb0L2VyaX567hzszAhkEQFvHXqY8cfODfj7KqTPi1Im32u24SURBXMR1yFjD3L7dFIH1PdFDKTLBe0xUlAYs="
