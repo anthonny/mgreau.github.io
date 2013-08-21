@@ -1,0 +1,25 @@
+doctype 5
+html
+  head
+    meta charset='utf-8'
+    title=(page.title ? [page.title, site.title] : [site.title]) * ' | '
+    link rel="stylesheet" href='/styles/style.css'
+    script src='/scripts/some.js'
+    javascript:
+        someInlineJs();
+    css:
+      .someInlineCss {
+      }
+  body class="someInlineCss"
+    div.header
+        h1
+            My Site
+    div.content
+        = content
+    div.footer
+        h3
+            I'm in the footer!
+    javascript:
+    - if site.google_analytics
+        =google_analytics_async
+

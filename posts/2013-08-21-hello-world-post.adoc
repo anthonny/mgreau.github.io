@@ -1,0 +1,7 @@
+---
+title: Blog Post Title
+author: Maxime Gréau
+date: 2013-08-21
+tags: [javaee, websocket]
+---
+First Blog post with asciidoc, just Hello World !!
