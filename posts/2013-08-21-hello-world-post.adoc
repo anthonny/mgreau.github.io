@@ -4,4 +4,15 @@ author: Maxime Gréau
 date: 2013-08-21
 tags: [javaee, websocket]
 ---
-First Blog post with asciidoc, just Hello World !!
+= First Blog Post : Hello, AsciiDoc!
+Doc Writer <doc@example.com>
+
+An introduction to http://asciidoc.org[AsciiDoc].
+
+== First Section
+
+* item 1
+* item 2
+
+[source,ruby]
+puts "Hello, World!
