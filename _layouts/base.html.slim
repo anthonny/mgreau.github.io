@@ -4,13 +4,13 @@ html
     meta charset='utf-8'
     meta name='viewport' content='width=device-width, initial-scale=1.0'
     title=(page.title ? [page.title, site.title] : [site.title]) * ' | '
-    link rel="stylesheet" href='/stylesheet/bootstrap.css'
-    link rel="stylesheet" href='/stylesheet/bootstrap-responsive.css'
-    link rel="stylesheet" href='/stylesheet/font-awesome.min.css'
-    link rel="stylesheet" href='/stylesheet/flexslider.css'
-    link rel="stylesheet" href='/stylesheet/theme-style.css'
-    link rel="stylesheet" href='/stylesheet/alternative-colour.css'
-    link rel="stylesheet" href='/stylesheet/custom-style.css'
+    link rel="stylesheet" href='/stylesheets/bootstrap.css'
+    link rel="stylesheet" href='/stylesheets/bootstrap-responsive.css'
+    link rel="stylesheet" href='/stylesheets/font-awesome.min.css'
+    link rel="stylesheet" href='/stylesheets/flexslider.css'
+    link rel="stylesheet" href='/stylesheets/theme-style.css'
+    link rel="stylesheet" href='/stylesheets/alternative-colour.css'
+    link rel="stylesheet" href='/stylesheets/custom-style.css'
     link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'
     link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Condiment'
       
@@ -40,9 +40,16 @@ html
       </div>
     div.content
         = content
-    div.footer
-        h3
-            footer
+    footer id="footer"
+        <div class="container">
+          <div class="row-fluid pull-center">
+            <div class="social-media">
+              <a href="#"><i class="icomoon-twitter-3"></i></a>
+              <a href="#"><i class="icomoon-google-plus-4"></i></a>
+            </div>
+            <p>Copyright 2013 © <a href="http://mgreau.com">mgreau.com</a></p>
+          </div>
+        </div>    
     javascript:
     - if site.google_analytics
         =google_analytics_async
