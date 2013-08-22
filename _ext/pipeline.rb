@@ -1,5 +1,5 @@
 require 'bootstrap-sass'
-#require 'erubis'
+require 'erubis'
 require 'tilt'
 
 Awestruct::Extensions::Pipeline.new do
