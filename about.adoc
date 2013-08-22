@@ -1,7 +1,0 @@
----
-title: About
-author: Jason Lee
----
-h1
-    About
-This page is all about me!
