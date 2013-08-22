@@ -2,23 +2,29 @@ doctype 5
 html
   head
     meta charset='utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1.0'
     title=(page.title ? [page.title, site.title] : [site.title]) * ' | '
-    link rel="stylesheet" href='/styles/style.css'
-    script src='/scripts/some.js'
-    javascript:
-        someInlineJs();
-    css:
-      .someInlineCss {
-      }
-  body class="someInlineCss"
+    link rel="stylesheet" href='/stylesheet/bootstrap.css'
+    link rel="stylesheet" href='/stylesheet/bootstrap-responsive.css'
+    link rel="stylesheet" href='/stylesheet/font-awesome.min.css'
+    link rel="stylesheet" href='/stylesheet/flexslider.css'
+    link rel="stylesheet" href='/stylesheet/theme-style.css'
+    link rel="stylesheet" href='/stylesheet/alternative-colour.css'
+    link rel="stylesheet" href='/stylesheet/custom-style.css'
+    link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'
+    link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Condiment' rel='stylesheet'
+      
+    script src='plugins/retina/retina.js'
+
+  body 
     div.header
         h1
-            My Site
+            mgreau.com | Java EE - Maven - Web
     div.content
         = content
     div.footer
         h3
-            I'm in the footer!
+            footer
     javascript:
     - if site.google_analytics
         =google_analytics_async
