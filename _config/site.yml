@@ -13,7 +13,7 @@ asciidoctor:
 
 profiles:
   production:
-    base_url: http://mgreau.github.io/blog-awestruct-asciidoctor
+    base_url: http://mgreau.github.io/
     deploy:
       host: github_pages
       # use gh-branch for repositories other than <username>.github.io
