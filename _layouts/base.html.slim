@@ -30,7 +30,7 @@ html
               <ul class="nav" id="main-menu">
                 <li class="current"><a href="#about">About</a></li>
                 <li class=""><a href="#work">Work</a></li>
-                <li class=""><a href="#services">Services</a></li>
+                <li class=""><a href="#blog">Blog</a></li>
                 <li class=""><a href="#experience">Experience</a></li>
                 <li class=""><a href="#contact" class="stamp">Hire me</a></li>              
               </ul>
@@ -38,8 +38,34 @@ html
           </div>
         </div>
       </div>
-    div.content
-        = content
+    div.content id="content"
+      <section class="scroll-section about block primary" id="about">
+	      <div class="container">
+	        <div class="row-fluid">
+	          <div class="span3 photo">
+	            <img src="img/misc/profile.png" alt="My picture" class="img-circle pull-center" />
+	          </div>
+	          <div class="span9 details">
+	            <h2 class="primary-focus">Maxime Gréau</h2>
+	            <h3 class="secondary-focus">IT Architect </h3>
+	            <p>Hi there. I'm a front-end developer with over 11 years experience. I have a passion for details and visual quality. Experience on handling ambitious deadlines, organized and a good team-player.</p>
+	            <div class="margin-top">
+	                <a href="#services" class="btn btn-large btn-primary-grad">Find Out More <i class="icon-angle-down"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	     </div>
+      </section>
+      <section class="scroll-section services block gray" id="services">
+	      <div class="container">
+	        <h2>Blog</h2>
+	        <div class="row-fluid">
+	          <div class="span12 service"> 
+	                    = content
+	          </div>
+	        </div>
+	      </div>
+      </section>	
     footer id="footer"
         <div class="container">
           <div class="row-fluid pull-center">
