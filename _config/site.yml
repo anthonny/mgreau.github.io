@@ -17,6 +17,6 @@ profiles:
     deploy:
       host: github_pages
       # use gh-branch for repositories other than <username>.github.io
-      branch: gh-pages
+      branch: master
       # use master branch for <username>.github.io repository
       #branch: master
