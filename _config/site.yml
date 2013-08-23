@@ -14,6 +14,7 @@ asciidoctor:
 profiles:
   production:
     base_url: http://mgreau.github.io/
+    google_analytics: UA-20147445-1
     deploy:
       host: github_pages
       # use gh-branch for repositories other than <username>.github.io
