@@ -1953,12 +1953,12 @@ address i {
   width: 230px;
   height: 74px;
   text-indent: -1000000px;
-  background-image: url('../img/misc/icon_logo.png');
+  background-image: url('../images/misc/icon_logo.png');
   background-size: 230px 74px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .brand h1 a {
-    background-image: url('../img/misc/icon_logo@2x.png');
+    background-image: url('../images/misc/icon_logo@2x.png');
     background-size: 230px 74px;
   }
 }
@@ -2440,13 +2440,13 @@ h3.title-divider {
 }
 /* @section 2.9 backgrounds */
 .bg-faces {
-  background-image: url('../img/backgrounds/faces.jpg');
+  background-image: url('../images/backgrounds/faces.jpg');
   background-size: auto 250px;
   background-repeat: repeat-x;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .bg-faces {
-    background-image: url('../img/backgrounds/faces@2x.jpg');
+    background-image: url('../images/backgrounds/faces@2x.jpg');
     background-size: auto 250px;
   }
 }
@@ -2454,7 +2454,7 @@ h3.title-divider {
   min-height: 250px;
 }
 .bg-blurred {
-  background: url(../img/backgrounds/people-blur.jpg) left top no-repeat;
+  background: url(../images/backgrounds/people-blur.jpg) left top no-repeat;
 }
 .bg-blurred .filter {
   padding: 5em 0;
@@ -3919,72 +3919,72 @@ input[type="color"],
   margin: 0 auto;
 }
 .service-agile {
-  background-image: url('../img/services/service-agile.png');
+  background-image: url('../images/services/service-agile.png');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-agile {
-    background-image: url('../img/services/service-agile@2x.png');
+    background-image: url('../images/services/service-agile@2x.png');
     background-size: 100px 100px;
   }
 }
 .service-backend {
-  background-image: url('../img/services/service-backend.png');
+  background-image: url('../images/services/service-backend.png');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-backend {
-    background-image: url('../img/services/service-backend@2x.png');
+    background-image: url('../images/services/service-backend@2x.png');
     background-size: 100px 100px;
   }
 }
 .service-css3 {
-  background-image: url('../img/services/service-css3.png');
+  background-image: url('../images/services/service-css3.png');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-css3 {
-    background-image: url('../img/services/service-css3@2x.png');
+    background-image: url('../images/services/service-css3@2x.png');
     background-size: 100px 100px;
   }
 }
 .service-drupal {
-  background-image: url('../img/services/service-drupal.png');
+  background-image: url('../images/services/service-drupal.png');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-drupal {
-    background-image: url('../img/services/service-drupal@2x.png');
+    background-image: url('../images/services/service-drupal@2x.png');
     background-size: 100px 100px;
   }
 }
 .service-html5 {
-  background-image: url('../img/services/service-html5.png');
+  background-image: url('../images/services/service-html5.png');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-html5 {
-    background-image: url('../img/services/service-html5@2x.png');
+    background-image: url('../images/services/service-html5@2x.png');
     background-size: 100px 100px;
   }
 }
 .service-pm {
-  background-image: url('../img/services/service-pm.png');
+  background-image: url('../images/services/service-pm.png');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-pm {
-    background-image: url('../img/services/service-pm@2x.png');
+    background-image: url('../images/services/service-pm@2x.png');
     background-size: 100px 100px;
   }
 }
 .service-wordpress {
-  background-image: url('../img/services/service-wordpress.png');
+  background-image: url('../images/services/service-wordpress.png');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-wordpress {
-    background-image: url('../img/services/service-wordpress@2x.png');
+    background-image: url('../images/services/service-wordpress@2x.png');
     background-size: 100px 100px;
   }
 }
@@ -4021,7 +4021,7 @@ input[type="color"],
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-image: url('../img/misc/bg_timeline-line.png');
+  background-image: url('../images/misc/bg_timeline-line.png');
   background-size: 2px auto;
   background-repeat: repeat-y;
   background-position: center top;
@@ -4037,7 +4037,7 @@ input[type="color"],
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .timeline {
-    background-image: url('../img/misc/bg_timeline-line@2x.png');
+    background-image: url('../images/misc/bg_timeline-line@2x.png');
     background-size: 2px auto;
   }
 }
