@@ -6,7 +6,11 @@ layout: base
 	        <h2>Blog</h2>
 	        <div class="row-fluid">
 	          <div class="span12 service"> 
-	               
+	                =partial('pagination.html.slim', :posts => page.posts)
+			div style="clear: both"
+			- page.posts.each do |post|
+			     =partial('entry.html.slim', :post => post, :listing => true)
+			=partial('pagination.html.slim', :posts => page.posts)   
 	          </div>
 	        </div>
 	    </div>
