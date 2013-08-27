@@ -4,8 +4,9 @@ Maxime Gréau
 :awestruct-layout: base
 :awestruct-tags: [jboss-eap, xstream]
 
+== XStream need to load class "sun.misc.Unsafe"
 If you want to use the Sun14ReflectionProvider with XStream, you have to add a dependency to the "sun.jdk" module.
-
+[more]
 [source,xml]
 --
 <?xml version="1.0" encoding="UTF-8"?>
