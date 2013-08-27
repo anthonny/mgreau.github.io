@@ -1,6 +1,7 @@
 require 'bootstrap-sass'
 require 'erubis'
 require 'tilt'
+require 'readmore'
 
 Awestruct::Extensions::Pipeline.new do
   extension Awestruct::Extensions::Posts.new( '/posts', :posts)
@@ -18,4 +19,5 @@ Awestruct::Extensions::Pipeline.new do
 
   helper Awestruct::Extensions::Partial
   helper Awestruct::Extensions::GoogleAnalytics
+  helper Awestruct::Extensions::ReadMore
 end
