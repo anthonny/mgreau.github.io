@@ -5,7 +5,7 @@ article.post
     h4
       time.pubdate datetime=page.post.date.strftime('%FT%T%:z') =page.post.date.strftime "%A, %B #{page.post.date.day}, %Y"
   .entry-content
-    = page.post.content
+    = truncate(page.post.content)
   footer.entry-footer
     - if page.post.tags
       .tags
