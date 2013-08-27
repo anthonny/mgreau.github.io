@@ -1,13 +1,9 @@
----
-title: How to use XStream Provider Sun14ReflectionProvider with JBoss EAP 6 
-author: Maxime Gréau
-date: 2013-08-26
----
-:awestruct-layout: base
-:awestruct-tags: [jboss-eap, xstream]
-== XStream need to load class "sun.misc.Unsafe"
+= XStream need to load class "sun.misc.Unsafe"
 Maxime Gréau
 2013-08-26
+:awestruct-layout: base
+:awestruct-tags: [jboss-eap, xstream]
+
 If you want to use the Sun14ReflectionProvider with XStream, you have to add a dependency to the "sun.jdk" module.
 
 [source,xml]
