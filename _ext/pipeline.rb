@@ -4,8 +4,12 @@ require 'tilt'
 
 Awestruct::Extensions::Pipeline.new do
   extension Awestruct::Extensions::Posts.new( '/posts', :posts)
-  extension Awestruct::Extensions::Paginator.new( :posts, '/index', :per_page => 10 )
-  extension Awestruct::Extensions::Tagger.new( :posts, '/index', '/posts/tags', :per_page => 10)
+  extension Awestruct::Extensions::Paginator.new( :posts, '/index', :per_page => 3 )
+  extension Awestruct::Extensions::Tagger.new( :posts, '/index', '/posts/tags', :per_page => 3)
+  
+  extension Awestruct::Extensions::Paginator.new( :posts, '/blog', :per_page => 10 )
+  extension Awestruct::Extensions::Tagger.new( :posts, '/blog', '/posts/tags', :per_page => 10)
+  
   extension Awestruct::Extensions::TagCloud.new( :tagcloud, '/posts/tags/index.html', :layout=>'base', :title=>'Tags')
  # extension Awestruct::Extensions::Disqus.new
 
