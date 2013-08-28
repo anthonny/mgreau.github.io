@@ -1,10 +1,10 @@
-= WebSocket JavaEE 7 Demo
+= mgreau.com
 Maxime Gréaun <@mgreau>
 :imagesdir: ../
 
-This project demonstrates the use of the WebSocket Java EE 7 specification
+My personal Web Site with Asciidoctor and Awestruct
 
 
 == Screenshot
 
-image::html5_websocket.png[Screenshot of the WebSocket Java EE 7 demo]
+image::mgreaudotcom.png[Screenshot of the Home paage]
