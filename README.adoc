@@ -1,0 +1,4 @@
+= My personal WebSite (mgreau.com)
+Maxime Gréau <@mgreau>
+:imagesdir: images
+
