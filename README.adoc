@@ -1,0 +1,10 @@
+= mgreau.com
+Maxime Gréaun <@mgreau>
+:imagesdir: ../
+
+My personal Web Site with Asciidoctor and Awestruct
+
+
+== Screenshot
+
+image::mgreaudotcom.png[Screenshot of the Home paage]
