@@ -24,7 +24,6 @@ task :travis do
     f.write("https://#{ENV['GH_TOKEN']}:@github.com")
   end
   system "git branch #{deploy_branch} origin/#{deploy_branch}"
-  system 'bundle install'
- # system 'bundle exec awestruct -P production -g --deploy'
+  system 'bundle exec awestruct -P production -g --deploy'
   File.delete '.git/credentials'
 end
