@@ -1,7 +1,7 @@
-= XStream need to load class "sun.misc.Unsafe"
+= XStream on EAP 6 with Sun14ReflectionProvider
 Maxime Gréau
 2013-08-26
-:awestruct-layout: base
+:awestruct-layout: post
 :awestruct-tags: [jboss-eap, xstream]
 
 == XStream need to load class "sun.misc.Unsafe"

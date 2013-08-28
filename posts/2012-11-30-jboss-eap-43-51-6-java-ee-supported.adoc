@@ -1,0 +1,14 @@
+= JBoss EAP 4.3 / 5.1 / 6 => Java EE supported standards in each EAP releases
+Maxime Gréau
+2012-11-30
+:awestruct-layout: post
+:awestruct-tags: [jboss-eap, javaee, jsr]
+
+TIP: Langage EN / Timereading 5mn
+
+NOTE: This post presents, as a diagram, all Java EE standards supported in each JBoss EAP version.
+The following data are based on Red Hat official documentation.
+
+You can click on each component to access the Java Specification Requests (JSRs) details or move to the complete lists.
+
+

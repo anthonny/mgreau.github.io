@@ -6,6 +6,8 @@ html
     title=(page.title ? [page.title, site.title] : [site.title]) * ' | '
     link rel="stylesheet" href='/stylesheets/bootstrap.css'
     link rel="stylesheet" href='/stylesheets/bootstrap-responsive.css'
+    - if page.layout == 'post'
+      link rel="stylesheet" href='/stylesheets/asciidoctor.css'
     link rel="stylesheet" href='/stylesheets/font-awesome.min.css'
     link rel="stylesheet" href='/plugins/flexslider/flexslider.css'
     link rel="stylesheet" href='/stylesheets/theme-style.css'
@@ -49,7 +51,7 @@ html
               <a title="My Github account - mgreau"  href="https://github.com/mgreau"><i class="icomoon-github-3"></i></a>
               <a title="My LinkedIn account"  href="https://fr.linkedin.com/in/mgreau"><i class="icomoon-linkedin"></i></a>
             </div>
-            <p>Copyright 2013 © <a href="http://mgreau.com">[site.title]</a></p>
+            <p>Copyright 2013 © <a href="http://mgreau.com">mgreau.com</a></p>
           </div>
         </div>    
     javascript:

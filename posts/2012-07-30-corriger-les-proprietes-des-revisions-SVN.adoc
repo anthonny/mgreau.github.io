@@ -1,0 +1,43 @@
+= Corriger les propriétés d'une révision Subversion
+Maxime Gréau
+2012-07-30
+:awestruct-layout: post
+:awestruct-tags: [svn, shell]
+
+TIP: Lecture 10mn / Langage FR
+
+NOTE: Ce post explique comment mettre à jour les propriétés SVN d'une révision donnée d'un repository. Et notamment la propriété svn:date qui, lorsqu'elle est absente sur certaines révisions, bloque les checkout via le client SVNKit (utilisé par défaut dans le plugin Subversion de Jenkins CI).
+
+pass::[more]
+
+Suite à des traitements d'administration sur des référentiels Apache Subversion 1.6, les jobs Jenkins CI ne parviennent plus à récupérer les sources d'un référentiel.
+
+
+== Les symptômes du problème
+* les jobs Jenkins ne parviennent plus à faire des "checkout" sur un repository
+* toutes les commandes SVN fonctionnent sur ce même repository via le plugin Eclipse (Subclipse - JavaHL)
+* ces mêmes commandes fonctionnent également en direct sur le serveur SVN
+* le message d'erreur dans la console Jenkins est le suivant :
+
+[source,log]
+--
+Building in workspace /.../continuous-integration/jobs/mon-projet/workspace
+Checking out a fresh workspace because there's no workspace at 
+/.../continuous-integration/jobs/mon-projet/workspace
+
+Cleaning local Directory .
+Checking out http://serveur/svn/repo1/mon-projet/trunk
+ERROR: Failed to check out http://serveur/svn/repo1/mon-projet/trunk
+
+org.tmatesoft.svn.core.SVNException: svn: E175002: REPORT of '/svn/repo1/!svn/vcc/default': 500 Internal Server Error (http://serveur)
+ at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.error(SVNErrorManager.java:64)
+ ...
+ Caused by: svn: E175002: REPORT of '/svn/repo1/!svn/vcc/default': 500 Internal Server Error (http://serveur)
+ at org.tmatesoft.svn.core.SVNErrorMessage.create(SVNErrorMessage.java:208)
+ at org.tmatesoft.svn.core.SVNErrorMessage.create(SVNErrorMessage.java:189)
+ ...
+ at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.getDatedRevision(DAVRepository.java:200)
+ ... 30 more
+FATAL: null
+java.lang.NullPointerException
+--

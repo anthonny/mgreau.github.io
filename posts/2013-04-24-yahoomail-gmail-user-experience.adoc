@@ -1,0 +1,34 @@
+= Yahoo! Mail, t'es une messagerie, t'as pas de conversation ? non mais allô quoi !
+Maxime Gréau
+2013-04-24
+:awestruct-layout: post
+:awestruct-tags: [yahoomail, gmail]
+:link-gmail: http://www.google.com/mail/help/intl/fr/about.html
+:link-gmailblog: http://gmailblog.blogspot.fr/
+:link-ymailblog: http://ycorpblog.com/tag/yahoo-mail/
+:link-mmayer: http://fr.wikipedia.org/wiki/Marissa_Mayer
+:link-gmail9ans: http://gmailblog.blogspot.fr/2013/04/gmail-9-years-and-counting.html
+:link-ymail: http://en.wikipedia.org/wiki/Yahoo!_Mail
+:link-ymaildropbox: http://yodel.yahoo.com/blogs/product-news/yahoo-mail-dropbox-team-attachments-easier-13210.html
+:link-gmaildrive: http://gmailblog.blogspot.fr/2012/11/gmail-and-drive-new-way-to-send-files.html
+:link-newymail: http://yodel.yahoo.com/blogs/product-news/introducing-yahoo-mail-12773.html
+:link-ymail1usa: http://news.cnet.com/8301-1023_3-57543177-93/gmail-edges-hotmail-as-worlds-top-e-mail-service/
+:link-mail: http://www.arobase.org/culture/chiffres-email.htm
+:link-gmaillabel: http://gmailblog.blogspot.fr/2011/05/3-labs-graduations-1-retirement.html?q=label
+
+NOTE: Cet article expose mon point de vue sur l'ergonomie, l'expérience utilisateur et les services rendues (ou pas) à l'internaute par Yahoo! Mail et Gmail. Je me base sur l'expérience de mon utilisation de Yahoo! Mail depuis 14 ans et de Gmail depuis 7 ans.
+
+Alors que {link-gmail}[Gmail] vient de fêter, au début du mois, {link-gmail9ans}[ses 9 ans d'existence], Yahoo! a sorti fin 2012 la dernière version de Yahoo! Mail créé en 1997. C'est l''occasion de faire un bilan de ces 2 acteurs principaux sur ce marché du webmail gratuit (Il ne sera pas question du 3e acteur, Hotmail, car je ne l'ai jamais testé). Il faut savoir que ces 3 acteurs revendiquent *chacun plus de 280 millions d'utilisateurs* dans le monde !
+
+pass::[more]
+
+image::posts/Gmail_yahoo_logo.png[Logos Yahoo!Mail Gmail]
+
+Il existe déjà un certain nombre de comparatifs de ces 2 webmails mais ils se focalisent trop souvent sur des éléments tels que le nombre de Gigas d'espace ou les protocoles activés... et pas sur les éléments importants d'une boîte de messagerie dans un navigateur à savoir : *les fonctionnalités de base disponibles et l'expérience utilisateur associée*. 
+Autrement dit, comment faire pour nous rendre la vie la plus simple possible sur les principales actions que nous réalisons tous (geek ou novice) chaque jour : écrire un mail, lire un mail, répondre, faire suivre, envoyer une pièce jointe, rechercher dans nos messages...
+
+== Yahoo! Mail, une messagerie restée dans les années 90
+
+=== Des mauvais choix techniques et ergonomiques
+
+== Le mode "Conversation" : une fonctionnalité indispensable !
