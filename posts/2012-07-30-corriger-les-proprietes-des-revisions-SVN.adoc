@@ -4,7 +4,7 @@ Maxime Gréau
 :awestruct-layout: post
 :awestruct-tags: [svn, shell]
 
-TIP: Lecture 10mn / Langage FR
+TIP: Lecture 10mn/ Langage FR
 
 NOTE: Ce post explique comment mettre à jour les propriétés SVN d'une révision donnée d'un repository. Et notamment la propriété svn:date qui, lorsqu'elle est absente sur certaines révisions, bloque les checkout via le client SVNKit (utilisé par défaut dans le plugin Subversion de Jenkins CI).
 
@@ -19,7 +19,7 @@ Suite à des traitements d'administration sur des référentiels Apache Subversi
 * ces mêmes commandes fonctionnent également en direct sur le serveur SVN
 * le message d'erreur dans la console Jenkins est le suivant :
 
-[source,log]
+[source,text]
 --
 Building in workspace /.../continuous-integration/jobs/mon-projet/workspace
 Checking out a fresh workspace because there's no workspace at 

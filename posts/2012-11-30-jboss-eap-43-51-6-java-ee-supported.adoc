@@ -9,6 +9,8 @@ TIP: Langage EN / Timereading 5mn
 NOTE: This post presents, as a diagram, all Java EE standards supported in each JBoss EAP version.
 The following data are based on Red Hat official documentation.
 
+pass::[more]
+
 You can click on each component to access the Java Specification Requests (JSRs) details or move to the complete lists.
 
 

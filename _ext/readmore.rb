@@ -6,9 +6,14 @@ module Awestruct
         index ? content[0...index] : content
       end
  
-      def filter(content)
+       def filter(content)
         index = content.index("pass::[more]")
-        index ? content[index..index+11] : content
+        if index != nil
+            if index > -1
+                content[index..index+11]= ""
+            end
+        end
+        content
       end
     end
   end

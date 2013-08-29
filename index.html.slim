@@ -12,7 +12,7 @@ layout: base
 	            <h3 class="secondary-focus">IT Architect and Author - Java EE, Maven and Web</h3>
 	            <p>I'm a Software Developer with over 10 years experience. I wrote a book about Apache Maven 3.</p>
 	            <div class="margin-top">
-	                <a href="/experience" class="btn btn-large btn-primary-grad">Find Out More <i class="icon-angle-down"></i></a>
+	                <a href="/experience.html" class="btn btn-large btn-primary-grad">Find Out More <i class="icon-angle-down"></i></a>
 	            </div>
 	          </div>
 	        </div>
@@ -20,14 +20,13 @@ layout: base
 </section>
 <section class="scroll-section services block gray" id="services">
 	    <div class="container">
-	        <h2>Blog</h2>
+	        <h2>Latest Posts</h2>
 	        <div class="row-fluid">
-	          <div class="span12 service"> 
-	                =partial('pagination.html.slim', :posts => page.posts)
-				    div style="clear: both"
+	          <div class="span12"> 
+	          	<ul>
 				    - page.posts.each do |post|
-				        =partial('entry.html.slim', :post => post, :listing => true)
-				    =partial('pagination.html.slim', :posts => page.posts)    
+				       ="<li><h4><a href=#{post.url}>#{post.title}</a> #{post.date.strftime('%d/%m/%Y')}</h4></li>"
+				</ul>
 	          </div>
 	        </div>
 	    </div>
