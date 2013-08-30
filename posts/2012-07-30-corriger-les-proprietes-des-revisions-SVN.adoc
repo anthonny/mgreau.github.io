@@ -59,7 +59,7 @@ svn log --xml -v -r {2008-12-01T00:00:00Z}:{2012-<wbr></wbr>07-13T15:00:00Z} fil
 
 &lt;?xml version="1.0"?&gt;
 &lt;log&gt;
-svn: Failed to find time on revision 38307</pre>
+svn: Failed to find time on revision 38307 
 --
 
 * Accès aux sources via le protocole HTTP
@@ -69,14 +69,14 @@ svn: Failed to find time on revision 38307</pre>
 svn log --xml -v -r {2008-12-01T00:00:00Z}:{2012-<wbr></wbr>07-13T15:00:00Z} http://serveur/svn/
 
 svn: Server sent unexpected return value (500 Internal Server Error) in response to 
-REPORT request for '/svn/repo1/!svn/vcc/<wbr></wbr>default'</pre>
+REPORT request for '/svn/repo1/!svn/vcc/<wbr></wbr>default' 
 --
 
 L'aperçu des informations sur les révisions SVN dans l'IDE Eclipse confirme également le problème :
 
 [[img-svnide]]
 .Révisions SVN dans IDE Eclipse
-image::posts/blog_eclipse_svn_logs.png.png[Révisions SVN dans IDE Eclipse]
+image::posts/blog_eclipse_svn_logs.png[Révisions SVN dans IDE Eclipse]
 
 == Solution
 
@@ -86,43 +86,58 @@ Pour cela, il faut commencer par *autoriser la modification des propriétés* su
 
 === Autoriser la modification des propriétés SVN
 
-Par défaut Apache Subversion définit un <a href="http://svnbook.red-bean.com/en/1.6/svn-book.html#svn.ref.reposhooks.pre-revprop-change" target="_blank">hook (pre-revprop-change</a>) sur chaque référentiel SVN qui bloque la modification des propriétés SVN (hormis la propriété svn:log). il faut donc désactiver temporairement ce hook (faire une copie de sauvegarde avant) &nbsp;:</div>
-<pre class="prettyprint">echo '#!/bin/sh'&nbsp; &gt; repos/repo1/hooks/pre-revprop-change
+Par défaut Apache Subversion définit un http://svnbook.red-bean.com/en/1.6/svn-book.html#svn.ref.reposhooks.pre-revprop-change"[hook (pre-revprop-change)] sur chaque référentiel SVN qui bloque la modification des propriétés SVN (hormis la propriété svn:log). il faut donc désactiver temporairement ce hook (faire une copie de sauvegarde avant)
+[source,text]
+--
+echo '#!/bin/sh'&nbsp; &gt; repos/repo1/hooks/pre-revprop-change
 echo 'exit 0'&nbsp; &nbsp; &gt;&gt; repos/repo1/hooks/pre-revprop-change
-chmod 755 repos/repo1/hooks/pre-revprop-change</pre>
-<h3>
-Executer la commande SVN pour valoriser les propriétés d'une révision</h3>
-Il est donc possible d'éxécuter le commande SVN pour valoriser la propriété svn:date<br />
-<pre class="prettyprint">svn propset -r38307  --revprop svn:date '2011-09-21T19:55:44.000220Z' file:///svn/repos/repo1
-property 'svn:date' set on repository revision 38307</pre>
-<br />
-On en profite également pour mettre à jour l'auteur du commit (svn:author) ainsi que le commentaire (svn:log) associé :<br />
-<pre class="prettyprint">svn propset -r 38307 --revprop svn:author 'mgreau' file:///svn/repos/repo1
-property 'svn:author' set on repository revision 38307</pre>
-<pre class="prettyprint">svn propset -r38307  --revprop svn:log 'Correction pb date de révision' file:///svn/repos/repo1
-property 'svn:log' set on repository revision 38307</pre>
-<br />
+chmod 755 repos/repo1/hooks/pre-revprop-change
+--
+
+== Executer la commande SVN pour valoriser les propriétés d'une révision
+Il est donc possible d'éxécuter le commande SVN pour valoriser la propriété svn:date 
+
+[source,text] 
+-- 
+svn propset -r38307  --revprop svn:date '2011-09-21T19:55:44.000220Z' file:///svn/repos/repo1
+property 'svn:date' set on repository revision 38307 
+--
+ 
+On en profite également pour mettre à jour l'auteur du commit (svn:author) ainsi que le commentaire (svn:log) associé : 
+[source,text] 
+-- 
+svn propset -r 38307 --revprop svn:author 'mgreau' file:///svn/repos/repo1
+property 'svn:author' set on repository revision 38307 
+--
+
+[source,text] 
+-- 
+svn propset -r38307  --revprop svn:log 'Correction pb date de révision' file:///svn/repos/repo1
+property 'svn:log' set on repository revision 38307 
+--
 
 === Aperçu du résultat dans l'IDE Eclipse
 
 En rafraichissant la vue _History_ dans Eclipse, on s'aperçoit que la révision 38307 contient désormais des informations pour la date, l'auteur et le commentaire de commit.&nbsp;</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-pFBqZ1VkeO4/UBLOBeYswFI/AAAAAAAAU5Q/j6043AFy7uA/s1600/blog_eclipse_svn_logs2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="298" src="http://1.bp.blogspot.com/-pFBqZ1VkeO4/UBLOBeYswFI/AAAAAAAAU5Q/j6043AFy7uA/s640/blog_eclipse_svn_logs2.png" width="640" /></a></div>
-<div>
+[[img-svnide]]
+.Révisions SVN OK dans IDE Eclipse
+image::posts/blog_eclipse_svn_logs2.png[Révisions SVN OK dans IDE Eclipse]
 
 === Script de mise à jour automatique
 
-L'impression écran précédente met en valeur le fait que plusieurs révisions sont impactées par ce problème sur les propriétés SVN.<br />
-Je met à disposition <a href="https://docs.google.com/open?id=0Bx7rkna8etApWHJsbEJWY0hhdnM" target="_blank">un script shell (svn-propset.sh)</a> qui valorise ces propriétés SVN (date, auteur, commentaire) avec les valeurs passées en paramètres du script, pour un intervalle donné de révisions.<br />
-<br />
-<u><i>Exemple d'utilisation du script :</i></u><br />
-<pre class="prettyprint">./svn-propset.sh -X -a mgreau -f 38215 -t 38321 -l "Correction pb date de révision"
- -d 2011-09-21T19:55:44.000220Z -u file:///svn/repos/repo1</pre>
-<div>
-Pour d'autres informations vous pouvez consulter les posts (en anglais) qui m'ont permis de résoudre ce problème.<br />
-<div style="background-color: white; color: #222222; font-family: arial, sans-serif; font-size: 13px;">
-<ul>
-<li><a href="http://docs.codehaus.org/display/HAUSMATES/Could+not+access+revision+times" style="color: #1155cc;" target="_blank">http://docs.codehaus.org/<wbr></wbr>display/HAUSMATES/Could+not+<wbr></wbr>access+revision+times</a></li>
-<li><a href="http://blog.kymera-it.com/2011/02/changing-subversion-revision-times.html" style="color: #1155cc;" target="_blank">http://blog.kymera-it.com/<wbr></wbr>2011/02/changing-subversion-<wbr></wbr>revision-times.html</a></li>
+L'impression écran précédente met en valeur le fait que plusieurs révisions sont impactées par ce problème sur les propriétés SVN. 
+Je met à disposition https://docs.google.com/open?id=0Bx7rkna8etApWHJsbEJWY0hhdnM[un script shell (svn-propset.sh)] qui valorise ces propriétés SVN (date, auteur, commentaire) avec les valeurs passées en paramètres du script, pour un intervalle donné de révisions. 
+ 
+_Exemple d'utilisation du script :_
+
+[source,text] 
+-- 
+./svn-propset.sh -X -a mgreau -f 38215 -t 38321 -l "Correction pb date de révision"
+ -d 2011-09-21T19:55:44.000220Z -u file:///svn/repos/repo1 
+--
+
+Pour d'autres informations vous pouvez consulter les posts (en anglais) qui m'ont permis de résoudre ce problème. 
+* http://docs.codehaus.org/display/HAUSMATES/Could+not+access+revision+times[http://docs.codehaus.org/display/HAUSMATES/Could+not+<wbr></wbr>access+revision+times]
+* http://blog.kymera-it.com/2011/02/changing-subversion-revision-times.html[http://blog.kymera-it.com/2011/02/changing-subversion-<wbr></wbr>revision-times.html]
 
 
