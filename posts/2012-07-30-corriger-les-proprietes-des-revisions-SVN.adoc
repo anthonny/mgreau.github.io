@@ -48,7 +48,7 @@ L'accès à SVN est réalisé avec le http://httpd.apache.org/docs/2.2/mod/mod_d
 Fri Jul 27 10:04:45 2012] [error] [client ] Could not access revision times. &nbsp;[500, #0]
 --
 
-Le problème se confirme lors de l'exécution des 2 commandes suivantes qui devraient affichées les logs des commit &
+Le problème se confirme lors de l'exécution des 2 commandes suivantes qui devraient affichées les logs des commit :
 
 * Accès aux sources via le système de fichiers
 
@@ -117,7 +117,7 @@ property 'svn:log' set on repository revision 38307
 
 === Aperçu du résultat dans l'IDE Eclipse
 
-En rafraichissant la vue _History_ dans Eclipse, on s'aperçoit que la révision 38307 contient désormais des informations pour la date, l'auteur et le commentaire de commit.&nbsp;</div>
+En rafraichissant la vue _History_ dans Eclipse, on s'aperçoit que la révision 38307 contient désormais des informations pour la date, l'auteur et le commentaire de commit.
 [[img-svnide2]]
 .Révisions SVN OK dans IDE Eclipse
 image::posts/blog_eclipse_svn_logs2.png[Révisions SVN OK dans IDE Eclipse]
