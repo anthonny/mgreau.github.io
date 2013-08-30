@@ -74,7 +74,9 @@ REPORT request for '/svn/repo1/!svn/vcc/<wbr></wbr>default'</pre>
 
 L'aperçu des informations sur les révisions SVN dans l'IDE Eclipse confirme également le problème :
 
-<a href="http://3.bp.blogspot.com/-dQJFgZ4O-KI/UBLOAr97ELI/AAAAAAAAU5I/_4gyuagA3MA/s1600/blog_eclipse_svn_logs1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="295" src="http://3.bp.blogspot.com/-dQJFgZ4O-KI/UBLOAr97ELI/AAAAAAAAU5I/_4gyuagA3MA/s640/blog_eclipse_svn_logs1.png" width="640" /></a></div>
+[[img-svnide]]
+.Révisions SVN dans IDE Eclipse
+image::posts/blog_eclipse_svn_logs.png.png[Révisions SVN dans IDE Eclipse]
 
 == Solution
 
