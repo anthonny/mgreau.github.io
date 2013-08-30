@@ -1,4 +1,4 @@
-= Corriger les propriétés d'une révision Subversion
+= Subversion - corriger les propriétés d'une révision SVN
 Maxime Gréau
 2012-07-30
 :awestruct-layout: post

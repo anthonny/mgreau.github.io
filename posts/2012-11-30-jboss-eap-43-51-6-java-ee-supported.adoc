@@ -1,10 +1,10 @@
-= JBoss EAP 4.3 / 5.1 / 6 \: Java EE supported standards in each EAP releases
+= JBoss EAP 4.3 / 5.1 / 6 - Java EE supported standards in each EAP releases
 Maxime Gréau
 2012-11-30
 :awestruct-layout: post
 :awestruct-tags: [jboss-eap, javaee, jsr]
 
-TIP: Langage EN / Timereading 5mn
+TIP: Language EN / Timereading 5mn
 
 NOTE: This post presents, as a diagram, all Java EE standards supported in each JBoss EAP version.
 The following data are based on Red Hat official documentation.
@@ -13,4 +13,75 @@ pass::[more]
 
 You can click on each component to access the Java Specification Requests (JSRs) details or move to the complete lists.
 
+++++
+<div class="mxgraph" style="position:relative;overflow:hidden;width:1003px;height:774px;"><div style="width:1px;height:1px;overflow:hidden;">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</div></div>
+
+<script src="//drawdotio.appspot.com/embed.js" type="text/javascript"></script>
+++++
+
+== List of all Java EE JSRs supported 
+=== Supported in JBoss EAP 4.3 / 5 /6
+
+* http://jcp.org/en/jsr/detail?id=052[JSR 052: A Standard Tag Library for JavaServer Pages]
+* http://jcp.org/en/jsr/detail?id=067[JSR 067: JavaTM APIs for XML Messaging 1.0]
+* http://jcp.org/en/jsr/detail?id=093[JSR 093: JavaTM API for XML Registries 1.0 (JAXR)]
+* http://jcp.org/en/jsr/detail?id=101[JSR 101: JavaTM APIs for XML based RPC]
+* http://jcp.org/en/jsr/detail?id=153[JSR 153: Enterprise JavaBeansTM 2.1]
+* http://jcp.org/en/jsr/detail?id=181[JSR 181: Web Services Metadata for the JavaTM Platform]
+* http://jcp.org/en/jsr/detail?id=220[JSR 220: Enterprise JavaBeansTM 3.0]
+* http://jcp.org/en/jsr/detail?id=914[JSR 914: JavaTM Message Service (JMS) API]
+* http://jcp.org/en/jsr/detail?id=919[JSR 919: JavaMail]
+
+=== Supported in JBoss EAP 4.3
+
+* http://jcp.org/en/jsr/detail?id=151[JSR 151: JavaTM 2 Platform, Enterprise Edition 1.4 (J2EE 1.4) Specification]
+* http://jcp.org/en/jsr/detail?id=088[JSR 88: JavaTM EE Application Deployment]
+* http://jcp.org/en/jsr/detail?id=109[JSR 109: Implementing Enterprise Web Services]
+* http://jcp.org/en/jsr/detail?id=115[JSR 115: JavaTM Authorization Contract for Containers]
+* http://jcp.org/en/jsr/detail?id=154[JSR 154: JavaTM Servlet 2.4 Specification]
+* http://jcp.org/en/jsr/detail?id=224[JSR 224: JavaTM API for XML-Based Web Services (JAX-WS) 2.0]
+* http://jcp.org/en/jsr/detail?id=907[JSR 907: JavaTM Transaction API (JTA)]
+
+=== Supported in JBoss EAP 4.3 / 5.1
+
+* http://jcp.org/en/jsr/detail?id=077[JSR 077: J2EETM Management]
+* http://jcp.org/en/jsr/detail?id=112[JSR 112: J2EETM Connector Architecture 1.5]
+* http://jcp.org/en/jsr/detail?id=220[JSR 220: Enterprise JavaBeansTM 3.0]
+* http://jcp.org/en/jsr/detail?id=222[JSR 222: JavaTM Architecture for XML Binding (JAXB) 2.0]
+* http://jcp.org/en/jsr/detail?id=245[JSR 245: JavaServerTM Pages 2.1]
+* http://jcp.org/en/jsr/detail?id=250[JSR 250: Common Annotations for the JavaTM Platform]
+* http://jcp.org/en/jsr/detail?id=252[JSR 252: JavaServer Faces 1.2]
+
+=== Supported in JBoss EAP 5.1
+
+* http://jcp.org/en/jsr/detail?id=244[JSR 244: JavaTM Platform, Enterprise Edition 5 (Java EE 5) Specification]
+* http://jcp.org/en/jsr/detail?id=109[JSR 109: Implementing Enterprise Web Services]
+* http://jcp.org/en/jsr/detail?id=115[JSR 115: JavaTM Authorization Contract for Containers]
+* http://jcp.org/en/jsr/detail?id=154[JSR 154: JavaTM Servlet 2.4 Specification]
+* http://jcp.org/en/jsr/detail?id=224[JSR 224: JavaTM API for XML-Based Web Services (JAX-WS) 2.0]
+* http://jcp.org/en/jsr/detail?id=311[JSR 311: JAX-RS: The JavaTM API for RESTful Web Services]
+
+=== Supported in JBoss EAP 5.1 / 6
+
+* http://jcp.org/en/jsr/detail?id=045[JSR 045: Debugging Support for Other Languages]
+* http://jcp.org/en/jsr/detail?id=088[JSR 088: JavaTM EE Application Deployment]
+* http://jcp.org/en/jsr/detail?id=907[JSR 907: JavaTM Transaction API (JTA)]
+
+=== Supported in JBoss EAP 6
+
+* http://jcp.org/en/jsr/detail?id=316[JSR 316: JavaTM Platform, Enterprise Edition 6 (Java EE 6) Specification]
+* http://jcp.org/en/jsr/detail?id=077[JSR 077: J2EETM Management]
+* http://jcp.org/en/jsr/detail?id=109[JSR 109: Implementing Enterprise Web Services]
+* http://jcp.org/en/jsr/detail?id=115[JSR 115: JavaTM Authorization Contract for Containers]
+* http://jcp.org/en/jsr/detail?id=222[JSR 222: JavaTM Architecture for XML Binding (JAXB) 2.0]
+* http://jcp.org/en/jsr/detail?id=224[JSR 224: JavaTM API for XML-Based Web Services (JAX-WS) 2.0]
+* http://jcp.org/en/jsr/detail?id=245[JSR 245: JavaServerTM Pages 2.1]
+* http://jcp.org/en/jsr/detail?id=250[JSR 250: Common Annotations for the JavaTM Platform]
+* http://jcp.org/en/jsr/detail?id=299[JSR 299: Contexts and Dependency Injection for the JavaTM EE platform]
+* http://jcp.org/en/jsr/detail?id=303[JSR 303: Bean Validation]
+* http://jcp.org/en/jsr/detail?id=311[JSR 311: JAX-RS: The JavaTM API for RESTful Web Services]
+* http://jcp.org/en/jsr/detail?id=314[JSR 314: JavaServer Faces 2.0]
+* http://jcp.org/en/jsr/detail?id=315[JSR 315: JavaTM Servlet 3.0 Specification]
+* http://jcp.org/en/jsr/detail?id=317[JSR 317: JavaTM Persistence 2.0]
+* http://jcp.org/en/jsr/detail?id=322[JSR 322: JavaTM EE Connector Architecture 1.6]
 
