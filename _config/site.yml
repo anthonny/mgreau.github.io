@@ -3,8 +3,6 @@ author: Maxime Gréau
 local_tz: Europe/Paris
 interpolate: true
 base_url: http://localhost:4242
-disqus: mgreau
-disqus_developer: true
 
 asciidoctor:
   :compact: true
@@ -19,12 +17,12 @@ asciidoctor:
 profiles:
   development:
     base_url: http://localhost:4242
-    disqus: mgreau
+    disqus_shortname: mgreau
     disqus_developer: true
   production:
-    base_url: http://mgreau.github.io/
+    base_url: http://mgreau.com
     google_analytics: UA-20147445-1
-    disqus: mgreau
+    disqus_shortname: mgreau
     disqus_generate_id: true
     disqus_developer: false
     deploy:
