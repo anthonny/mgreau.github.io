@@ -1,6 +1,6 @@
 = mgreau.com
 Maxime Gréaun <@mgreau>
-:imagesdir: ../
+:imagesdir: .
 
 My personal Web Site with Asciidoctor and Awestruct
 
