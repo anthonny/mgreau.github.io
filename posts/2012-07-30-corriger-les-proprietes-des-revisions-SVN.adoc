@@ -4,14 +4,13 @@ Maxime Gréau
 :awestruct-layout: post
 :awestruct-tags: [svn, shell]
 
-TIP: Temps de lecture : 10mn / Language : FR
+TIP: Language : FR / Temps de lecture : 10mn 
 
-NOTE: Ce post explique comment mettre à jour les propriétés SVN d'une révision donnée d'un repository. Et notamment la propriété svn:date qui, lorsqu'elle est absente sur certaines révisions, bloque les checkout via le client SVNKit (utilisé par défaut dans le plugin Subversion de Jenkins CI).
+NOTE: Ce post explique comment *mettre à jour les propriétés SVN d'une révision donnée* d'un repository. Et notamment la propriété svn:date qui, lorsqu'elle est absente sur certaines révisions, bloque les checkout via le client http://svnkit.com/[SVNKit] (utilisé par défaut dans le https://wiki.jenkins-ci.org/display/JENKINS/Subversion+Plugin[plugin Subversion de Jenkins CI)].
 
 pass::[more]
 
 Suite à des traitements d'administration sur des référentiels Apache Subversion 1.6, les jobs Jenkins CI ne parviennent plus à récupérer les sources d'un référentiel.
-
 
 == Les symptômes du problème
 * les jobs Jenkins ne parviennent plus à faire des "checkout" sur un repository
@@ -76,7 +75,7 @@ L'aperçu des informations sur les révisions SVN dans l'IDE Eclipse confirme é
 
 [[img-svnide]]
 .Révisions SVN dans IDE Eclipse
-image::posts/blog_eclipse_svn_logs.png[Révisions SVN dans IDE Eclipse]
+image::posts/blog_eclipse_svn_logs1.png[Révisions SVN dans IDE Eclipse]
 
 == Solution
 
@@ -119,7 +118,7 @@ property 'svn:log' set on repository revision 38307
 === Aperçu du résultat dans l'IDE Eclipse
 
 En rafraichissant la vue _History_ dans Eclipse, on s'aperçoit que la révision 38307 contient désormais des informations pour la date, l'auteur et le commentaire de commit.&nbsp;</div>
-[[img-svnide]]
+[[img-svnide2]]
 .Révisions SVN OK dans IDE Eclipse
 image::posts/blog_eclipse_svn_logs2.png[Révisions SVN OK dans IDE Eclipse]
 
@@ -136,7 +135,8 @@ _Exemple d'utilisation du script :_
  -d 2011-09-21T19:55:44.000220Z -u file:///svn/repos/repo1 
 --
 
-Pour d'autres informations vous pouvez consulter les posts (en anglais) qui m'ont permis de résoudre ce problème. 
+Pour d'autres informations vous pouvez consulter les posts (en anglais) qui m'ont permis de résoudre ce problème:
+
 * http://docs.codehaus.org/display/HAUSMATES/Could+not+access+revision+times[http://docs.codehaus.org/display/HAUSMATES/Could+not+<wbr></wbr>access+revision+times]
 * http://blog.kymera-it.com/2011/02/changing-subversion-revision-times.html[http://blog.kymera-it.com/2011/02/changing-subversion-<wbr></wbr>revision-times.html]
 
