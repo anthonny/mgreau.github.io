@@ -37,3 +37,110 @@ Autrement dit, comment faire pour nous rendre la vie la plus simple possible sur
 === Des mauvais choix techniques et ergonomiques
 
 == Le mode "Conversation" : une fonctionnalité indispensable !
+Le mode "Conversation" : une fonctionnalité indispensable !</h3>
+</div>
+Vous avez sûrement des amis ou de la famille avec qui vous échangez des mails pour une fête, un anniversaire...et vous vous retrouvez avec 20 mails dans votre messagerie car tout le monde répond à l'ensemble des destinataires. Sur Yahoo! Mail ça donne <b>20 lignes dans votre Boite de Réception avec comme sujet "Re:Re:Re:Re:Re:Re:Re:Re:Re:Re:Re:Re:Re:Re:Re:Cadeau Anniversaire Jean-Michel"</b><br />
+Quel est l'intérêt d'avoir autant d'espace pris sur votre écran pour une discussion avec des réponses du type "OK pour moi" ? Si, en plus, vous avez plusieurs discussions différentes de ce type dans votre Boîte de réception, il devient impossible de retrouver le fil rapidement.<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-EdsNS-hUBWc/UXhQ8tzeS4I/AAAAAAAAaP4/Pm03PXyJKjY/s1600/yahoo_rerere.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="390" src="http://1.bp.blogspot.com/-EdsNS-hUBWc/UXhQ8tzeS4I/AAAAAAAAaP4/Pm03PXyJKjY/s640/yahoo_rerere.png" width="640" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Exemple de discussion avec 1 ligne pour chaque message avec des "Re: Re: Re: Re:&nbsp;Re: Re: Re:&nbsp;"</td></tr>
+</tbody></table>
+<br />
+Depuis longtemps dans Gmail  vous avez par défaut le <b><u>mode conversation activé</u></b> qui vous permet d'avoir une <b>seule ligne pour toute la conversation</b> puis d'afficher le détail et le déroulement de la conversation à plusieurs lors du clic sur cette discussion. Ainsi, vous suivez beaucoup plus facilement le fil de discussion et l'écran principal de votre boîte de réception est épuré de tous ces messages.<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-wqmOtDs9Bg0/UXhQ89QKkGI/AAAAAAAAaP8/idWo1rTTfsA/s1600/gmail_discussion.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="620" src="http://3.bp.blogspot.com/-wqmOtDs9Bg0/UXhQ89QKkGI/AAAAAAAAaP8/idWo1rTTfsA/s640/gmail_discussion.png" width="640" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Même type de discussion avec Gmail et le mode conversation : 1 ligne dans la boîte de réception puis le détail lors du clic</td></tr>
+</tbody></table>
+<br />
+<br />
+C'est pour moi une <b>fonctionnalité majeure, indispensable vu le nombre de mails envoyés aujourd'hui quotidiennement </b><a href="http://www.arobase.org/culture/chiffres-email.htm" target="_blank">(39 milliards en 2007 de personne à personne)</a> comparé à 10 ans en arrière. Cette option peut tout de même être désactivée pour les personnes réfractèrent à ce mode de lecture des discussions.<br />
+<div class="page-header">
+<h3>
+Des options qui font la différence</h3>
+</div>
+90% des fonctionnalités d'un webmail sont communes à tous ceux qui proposent un logiciel de ce type. Il faut donc <b>faire la différence sur les 10% restants</b>. Et là que propose Yahoo! Mail de plus que les autres, que le standard ?...pas grand chose...j'ai même envie de dire RIEN ! Des exemples ? En voici quelques-uns,  ce n'est bien sûr pas vital mais ce sont des petits plus très pratiques que l'on se doit d'attendre d'une multi-nationale comme Yahoo!, <a href="http://news.cnet.com/8301-1023_3-57543177-93/gmail-edges-hotmail-as-worlds-top-e-mail-service/" target="_blank">encore leader de la messagerie Web aux Etats-Unis fin 2012.</a><br />
+<br />
+<h4>
+Oups, avec la pièce jointe c'est mieux :-)</h4>
+<br />
+Vous devez avoir souri en lisant ce titre, non ? Combien de fois cela vous est-il arrivé ? J'ai plutôt envie de vous demander : "<b>Cela fait combien d'années que cela vous est arrivé pour la première fois ? 5 ans ? 10 ans ?</b>". Et depuis, toujours rien de nouveau. Pourtant, techniquement ce n'est vraiment pas compliqué d'essayer de limiter ce genre d'erreur et <u><b>donc d'aider l'utilisateur</b></u>.<br />
+Clairement, soit vous envoyez une pièce jointe directement sans écrire de texte dans le contenu du message et là le risque d'erreur est quasi nul, soit vous saisissez un texte avant et c'est à ce moment là que l'oubli peut se produire.<br />
+Dans ce deuxième cas, il y a de (très) fortes chances que vous fassiez référence au fait que vous allez envoyer une pièce jointe, non ? Il suffit donc d'analyser le contenu du message saisi avant l'envoi du mail à la recherche de mots clés tels que "pièce jointe", "pj", "fichier joint"... et de prévenir l'utilisateur qu'il a peut-être oublié quelque-chose.<br />
+Gmail propose d'activer cette fonctionnalité et vous préviens par une boîte de dialogue lors de la tentative d'envoi du message :<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-xGwFM1jY9d4/UXhUZUJQqyI/AAAAAAAAaQQ/9LyQJ1DOjcw/s1600/gmail_oups_pj.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="496" src="http://2.bp.blogspot.com/-xGwFM1jY9d4/UXhUZUJQqyI/AAAAAAAAaQQ/9LyQJ1DOjcw/s640/gmail_oups_pj.png" width="640" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Boîte de dialogue pour vous prévenir que vous avez peut-être oublié la pièce jointe</td></tr>
+</tbody></table>
+Pour ceux qui mettraient en avant le fait que Gmail analyse ici le contenu de vos messages, sachez que lorsque vous faîtes vos courses en magasin, vôtre parcours est analysé à votre insu par les caméras afin d'optimiser par la suite la vente des produits. Ne pensez donc pas que le fait que Yahoo! Mail ne propose pas cette fonctionnalité signifie qu'il n'analyse pas le contenu de vos messages également.<br />
+<br />
+<h4>
+Trop tard, j'ai cliqué !</h4>
+<br />
+Combien de fois vous vous êtes dit après avoir cliqué sur le bouton ENVOYER : "Mince! il y avait qui en copie ??" ou "Arg, j'ai oublié machin et truc" ou encore "Zut, je voulais écrire ça aussi". Trop tard ??? Non, pas avec Gmail ! <br />
+Et oui, quand on y pense, qu'est-ce que ça peut bien vous faire que votre message soit envoyé sur les serveurs destinataires <b>immédiatement après votre clic ou 5 secondes plus tard </b>(à part dans les services informatiques où les collègues entrent dans le bureau en disant "je viens de t'envoyer un mail il y a 2 secondes, tu l'as reçu ?!?" ). Vous ne maîtrisez de toute façon pas le chemin et le temps que va prendre votre message dans "le Cloud" pour se rendre à destination, et vous maîtrisez encore moins le moment où votre destinataire va être disponible pour lire votre message.<br />
+<br />
+Gmail propose donc une option à activer qui permet de <u><b>réellement envoyer le message après un délai paramètrable en secondes</b></u>. Ainsi, si vous décidez que votre mail sera réellement envoyé 5 secondes après votre action d'envoi, vous aurez la possibilité de cliquer sur un lien "Annuler" pendant ce laps de temps. Sans action de votre part, le mail est envoyé automatiquement après 5 secondes, c'est donc totalement transparent pour vous sauf quand vous en avez besoin, génial non ? Encore une fois, il n'y a rien d'extraordinaire techniquement derrière ça, <b>c'est simple, activable ou non par l'utilisateur et ça peut empêcher des désagréments importants</b> (l'oubli que le chef était en copie....)<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-GOM6a3kMh_A/UXhaek-8hAI/AAAAAAAAaQg/vdhtgjirzxY/s1600/gmail_annuler_envoi.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="352" src="http://1.bp.blogspot.com/-GOM6a3kMh_A/UXhaek-8hAI/AAAAAAAAaQg/vdhtgjirzxY/s640/gmail_annuler_envoi.png" width="640" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Vous avez un délai pour cliquer sur "Annuler" afin de ne pas envoyer le mail, passé ce délai le message est&nbsp;automatiquement réellement&nbsp;envoyé</td></tr>
+</tbody></table>
+<br />
+<h4>
+Il est rangé où déjà ce mail ? si si je l'ai quelque part !</h4>
+<br />
+Vous avez sûrement déjà utilisé Microsoft Windows, là où on organise ses fichiers dans une arborescence de dossiers et donc si un document répond à plusieurs thèmes, il faut choisir un des dossiers ou dupliquer le document en question ou encore créer un raccourci. Et bien Yahoo! Mail fonctionne comme ça encore aujourd'hui (sans l'option raccourci) !! On déplace donc un mail dans un dossier, du coup il n'est plus dans la boîte de réception. La boîte de réception est donc un dossier comme les autres et <b>un message ne peut apparaître que dans un seul dossier.</b><br />
+<br />
+Avec Gmail  tout est géré avec la <u><b>notion de "libellé" et non pas de dossier</b></u>. Ainsi chaque message est associé à un ou plusieurs libellés, il est donc possible de d'associer le message a des libellés tout en le gardant dans la boîte de réception (qui est un libellé particulier) ou de l'archiver (autre libellé) pour ne pas qu'il perturbe la boîte de réception. Les libellés peuvent être imbriqués et ils sont personnalisables graphiquement (couleur, police) pour mieux repérer rapidement les messages associés à ces libellés. On peut ensuite réaliser des recherches uniquement sur certains libellés. Bref, on peut faire au minimum la même chose qu'avec les dossier Yahoo! Mail mais surtout on dispose de 10 fois plus de possibilités pour organiser nos messages et donc les retrouver facilement.<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-hNhYgNbLLpg/UXhclszqU_I/AAAAAAAAaQw/Jh01H4hauiI/s1600/nested-labels.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="400" src="http://2.bp.blogspot.com/-hNhYgNbLLpg/UXhclszqU_I/AAAAAAAAaQw/Jh01H4hauiI/s400/nested-labels.png" width="300" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gestion des labels Gmail</td></tr>
+</tbody></table>
+<br />
+<h4>
+Tout message est d'abord un brouillon !</h4>
+<br />
+Avec Gmail, lorsque vous commencez à écrire un mail, c'est-à-dire que vous avez débuté votre saisie de texte, automatiquement (sans action de votre part) votre message est un brouillon enregistré qui disparaîtra dès l'envoi du mail ou qui vous fera une sauvegarde si votre PC s'éteint ou votre navigateur plante violemment (si si ça arrive souvent dans ces moments là). Sur Yahoo! Mail, il faut faire la première démarche de dire "Oui je veux l'enregistrer comme brouillon" pour qu'ensuite il se comporte comme Gmail ou attendre 5 minutes pour qu'il le fasse automatiquement.<br />
+Il faut s'interroger, combien de fois vous vous dîtes : "Tiens je vais écrire un brouillon", Non la majorité du temps, vous écrivez un message qui, s'il n'est pas envoyé dans la foulée pour des raisons X ou Y, doit être enregistré sans une action de votre part, c'est implicite. C'est comme si vous commenciez un message sur un bout de papier pour votre femme, que vous entendez votre enfant pleurer dehors car il est tombé de la balançoire, vous revenez 20 minutes plus tard pour finir votre message...et là plus rien !! Parce qu'avant de partir en courant, vous n'avez pas dit "Attends, enregistre mon travail avant que je revienne".<br />
+<br />
+<h4>
+Mais encore</h4>
+<br />
+Ce sont<b> quelques exemples parmi tant d'autres</b> : Gmail propose aussi une sécurité renforcée avec la validation en 2 étapes lors de la connexion à votre compte (un code temporaire, reçu par sms, est demandé après le mot de passe) ou encore la proposition automatique de destinataires souvent utilisés lors de l’écriture d'un mail à destination de plus de 2 personnes... Google met donc à disposition de l'utilisateur une liste très intéressante de fonctionnalités qu'il est toujours possible de désactiver si elles ne nous satisfont pas.<br />
+<div class="page-header">
+<h3>
+Du renouveau avec la nouvelle CEO Marissa Mayer ?...venue de Google :)</h3>
+</div>
+Il y a longtemps que je souhaite écrire cet article et, depuis, une <a href="http://yodel.yahoo.com/blogs/product-news/introducing-yahoo-mail-12773.html" target="_blank">nouvelle version de Yahoo! Mail est sortie fin 2012</a>. Cette annonce correspond à la première version depuis l'arrivée à la tête de Yahoo! d'une ex-employée de Google,&nbsp;<a href="http://fr.wikipedia.org/wiki/Marissa_Mayer" target="_blank">Marissa Mayer</a>. Dans cette nouvelle version, on perçoit immédiatement une volonté d'aller dans le sens du renouveau : <b><u>simplifier et épurer l'interface pour la rendre plus intuitive et optimiser la rapidité de fonctionnement</u></b>. Après quelques jours d'utilisation (pour cet article justement), je peux confirmer que c'est la meilleure version de Yahoo! Mail que j'ai utilisé depuis... Yahoo! Mail classique.<br />
+Mais, on peut aussi noter, à juste titre, que dans cette annonce <b>il n'y a aucune nouvelle fonctionnalité d'annoncée </b>! Peut-être pour la prochaine version ? Il faudra tout d'abord rattraper le retard sur les fonctionnalités majeures indispensables en 2013. Cela a commencé avec <a href="http://yodel.yahoo.com/blogs/product-news/yahoo-mail-dropbox-team-attachments-easier-13210.html" target="_blank">l'association récente de Yahoo! Mail avec Dropbox</a> là où <a href="http://gmailblog.blogspot.fr/2012/11/gmail-and-drive-new-way-to-send-files.html" target="_blank">Gmail propose l'utilisation de Google Drive depuis fin 2012</a> pour la gestion des pièces jointes volumineuses.<br />
+<div class="page-header">
+<h3>
+Merci Gmail. Une révolution en 2013 pour Yahoo! Mail ?</h3>
+</div>
+J'ai (volontairement) été un peu dur avec Yahoo! Mail dans cet article mais cela vient de ma frustration de voir comment cette messagerie utilisée par autant de personnes (280 millions fin 2012) et gérée par une société aussi importante que Yahoo! peut avoir si peu évoluée au fil des années. Cette impression qu'aucun bon choix n'ait été fait après la version "classique". Je suis peut-être aussi influencé par mon métier qui fait que je me soucie de choses auxquelles la majorité des utilisateurs ne prêtent guère attention. Les éventuels commentaires qui suivront ce post m'éclairciront sûrement sur ces points. Seulement quand je voie les efforts réalisés par Google avec Gmail pour inventer de nouvelles fonctionnalités, je me dis que nous les utilisateurs pourrions avoir encore davantage de possibilités si la concurrence était plus accrue.<br />
+J'ai l'impression que la stratégie de Marissa Mayer va dans ce sens : améliorer l'expérience utilisateur des internautes qui utilisent massivement ce service.<br />
+<br />
+Vous l'avez certainement compris, <b>après avoir commencé avec Yahoo! Mail, je suis devenu pro-Gmail</b> depuis quelques années maintenant mais je ne désespère pas de voir Yahoo! Mail s'améliorer. D'ailleurs, je leur propose un exemple d'ajout de fonctionnalité dans la version gratuite de leur webmail : l'accusé de lecture.<br />
+L'accusé de réception c'est bien, mais il est demandé lors du clic sur le sujet d'un message donc il permet de confirmer à l'expéditeur que le message est bien arrivé à destination (en gros de valider le fonctionnement des serveurs de messagerie !) mais le plus intéressant pour un utilisateur est d'être averti que le destinataire a bien pris connaissance du contenu du message envoyé; donc il est plus judicieux de proposer une action du style "Confirmer la lecture ?" à l'utilisateur lorsqu'il a potentiellement lu le message en entier (en bas de l’écran) ou lorsqu'il quitte le message (retour à la boite de réception...).<br />
+<br />
+Au passage donc, <b><u>Merci aux équipes de Google</u></b> pour leur travail assez exceptionnel tout de même, et allez <b><u>Yahoo! Mail, faites nous quelque chose de nouveau</u></b> !! Ajoutez une fonctionnalité qui n'existe pas encore chez vos concurrents. Il est évident qu'il reste encore plein de choses à proposer aux internautes pour les aider dans l'utilisation quotidienne de leurs mails, des petites choses souvent simples mais efficaces.<br />
+<br />
+<br />
+<br />
+<div dir="ltr">
+<i>* Liens&nbsp;référencés&nbsp;dans cette article :</i></div>
+<div dir="ltr">
+<ul>
+<li><i>Gmail Blog officiel :&nbsp;<a href="http://gmailblog.blogspot.fr/" style="color: #1155cc;" target="_blank">http://gmailblog.blogspot.<wbr></wbr>fr/</a></i></li>
+<li><i>Yahoo! Mail Blog officiel :&nbsp;<a href="http://ycorpblog.com/tag/yahoo-mail/" style="color: #1155cc;" target="_blank">http://ycorpblog.com/tag/<wbr></wbr>yahoo-mail/</a></i></li>
+<li><i>Marissa Mayer :&nbsp;<a href="http://fr.wikipedia.org/wiki/Marissa_Mayer" style="color: #1155cc;" target="_blank">http://fr.wikipedia.org/<wbr></wbr>wiki/Marissa_Mayer</a></i></li>
+<li><i>Gmail, 9 ans :&nbsp;<a href="http://gmailblog.blogspot.fr/2013/04/gmail-9-years-and-counting.html" style="color: #1155cc;" target="_blank">http://gmailblog.blogspot.<wbr></wbr>fr/2013/04/gmail-9-years-and-<wbr></wbr>counting.html</a></i></li>
+<li><i>Yahoo! Mail :&nbsp;<a href="http://en.wikipedia.org/wiki/Yahoo!_Mail" style="color: #1155cc;" target="_blank">http://en.wikipedia.org/<wbr></wbr>wiki/Yahoo!_Mail</a></i></li>
+<li><i>Yahoo! Mail et Dropbox :&nbsp;<a href="http://yodel.yahoo.com/blogs/product-news/yahoo-mail-dropbox-team-attachments-easier-13210.html" style="color: #1155cc;" target="_blank">http://yodel.yahoo.com/<wbr></wbr>blogs/product-news/yahoo-mail-<wbr></wbr>dropbox-team-attachments-<wbr></wbr>easier-13210.html</a></i></li>
+<li><i>Gmail et Google Drive :&nbsp;<a href="http://gmailblog.blogspot.fr/2012/11/gmail-and-drive-new-way-to-send-files.html" style="color: #1155cc;" target="_blank">http://gmailblog.blogspot.<wbr></wbr>fr/2012/11/gmail-and-drive-<wbr></wbr>new-way-to-send-files.html</a></i></li>
+<li><i>Le nouveau Yahoo! Mail : &nbsp;<a href="http://yodel.yahoo.com/blogs/product-news/introducing-yahoo-mail-12773.html" style="color: #1155cc;" target="_blank">http://yodel.yahoo.com/blogs/<wbr></wbr>product-news/introducing-<wbr></wbr>yahoo-mail-12773.html</a></i></li>
+<li><i>Yahoo! Mail n°1 aux USA&nbsp;<a href="http://news.cnet.com/8301-1023_3-57543177-93/gmail-edges-hotmail-as-worlds-top-e-mail-service/" style="color: #1155cc;" target="_blank">http://news.cnet.com/8301-<wbr></wbr>1023_3-57543177-93/gmail-<wbr></wbr>edges-hotmail-as-worlds-top-e-<wbr></wbr>mail-service/</a></i></li>
+<li><i>Email en chiffres :&nbsp;<a href="http://www.arobase.org/culture/chiffres-email.htm" style="color: #1155cc;" target="_blank">http://www.arobase.org/<wbr></wbr>culture/chiffres-email.htm</a></i></li>
+<li><i>Les labels Gmail :&nbsp;<a href="http://gmailblog.blogspot.fr/2011/05/3-labs-graduations-1-retirement.html?q=label" style="color: #1155cc;" target="_blank">http://gmailblog.blogspot.<wbr></wbr>fr/2011/05/3-labs-graduations-<wbr></wbr>1-retirement.html?q=label</a></i></li>
+</ul>
+</div>
+
