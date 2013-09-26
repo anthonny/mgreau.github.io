@@ -3,6 +3,9 @@ Maxime Gréau
 2013-04-24
 :awestruct-layout: post
 :awestruct-tags: [yahoomail, gmail]
+:toc:
+:toc-placement: preamble
+:toc-title: Table des matières de l'article
 :link-gmail: http://www.google.com/mail/help/intl/fr/about.html
 :link-gmailblog: http://gmailblog.blogspot.fr/
 :link-ymailblog: http://ycorpblog.com/tag/yahoo-mail/
@@ -16,7 +19,7 @@ Maxime Gréau
 :link-mail: http://www.arobase.org/culture/chiffres-email.htm
 :link-gmaillabel: http://gmailblog.blogspot.fr/2011/05/3-labs-graduations-1-retirement.html?q=label
 
-NOTE: Cet article expose mon point de vue sur l'ergonomie, l'expérience utilisateur et les services rendues (ou pas) à l'internaute par Yahoo! Mail et Gmail. Je me base sur l'expérience de mon utilisation de Yahoo! Mail depuis 14 ans et de Gmail depuis 7 ans.
+NOTE: Cet article expose mon point de vue sur l'ergonomie, l'expérience utilisateur et les services rendus (ou pas) à l'internaute par Yahoo! Mail et Gmail. Je me base sur l'expérience de mon utilisation de Yahoo! Mail depuis 14 ans et de Gmail depuis 7 ans.
 
 pass::[more]
 

@@ -5,7 +5,7 @@ layout: base
 	     <div class="container">
 	        <div class="row-fluid">
 	          <div class="span3 photo">
-	            <img src="https://lh5.googleusercontent.com/-AVzhFT9duBI/UWajPzPJQRI/AAAAAAAAaAk/wiYM4q5IQ3k/w1008-h1010-no/IMG_20130326_151421.jpg" alt="Golden Gate by bike :)" class="img-circle pull-center" />
+	            <img src="https://1.gravatar.com/avatar/a81c764f137343d59a5e6264c2e3c1c2?s=278" alt="Maxime's profile" class="img-circle pull-center" />
 	          </div>
 	          <div class="span9 details">
 	            <h2 class="primary-focus">Maxime Gréau</h2>
@@ -24,8 +24,9 @@ layout: base
 	        <div class="row-fluid">
 	          <div class="span12"> 
 	          	<ul>
-				    - page.posts.each do |post|
-				       ="<li><h4><a href=#{post.url}>#{post.title}</a> #{post.date.strftime('%d/%m/%Y')}</h4></li>"
+				    - page.posts.each do |post|	
+				    	- if post.date.strftime('%d/%m/%Y')!='27/09/2013'
+				       		="<li><h4><a href=#{post.url}>#{post.title}</a> #{post.date.strftime('%d/%m/%Y')}</h4></li>"
 				</ul>
 	          </div>
 	        </div>
