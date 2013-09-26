@@ -15,6 +15,7 @@ Awestruct::Extensions::Pipeline.new do
 
   #extension Awestruct::Extensions::Indexifier.new
   extension Awestruct::Extensions::Atomizer.new( :posts, '/feed.atom', :feed_title=>'mgreau Blog' )
+  extension Awestruct::Extensions::Sitemap.new
 
   helper Awestruct::Extensions::Partial
   helper Awestruct::Extensions::GoogleAnalytics
