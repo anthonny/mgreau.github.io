@@ -182,15 +182,66 @@ La spécification W3C est en cours de finalisation. Elle définit les méthodes 
 * onMessage
 * send
 
-== JSR 386 : API pour WebSocket Endpoints / Client
+== JSR 386 : API pour WebSocket
 
-La JSR 386 propose une API Java pour mettre en place un WebSocket Endpoint capable de gérer des requêtes sur le protocole WebSocket mais également une API Java pour réaliser un client afin de communiquer avec un Endpoint Server.
+La JSR 386 définit une {link-jsr356}[API Java pour WebSocket] qui propose :
+
+* toutes les annotations nécessaires à la création d'un +*WebSocket Endpoint*+, nom donné au composant Java capable de communiquer via le protocole WebSocket
+* le choix d'utiliser l'approche par annotation Java ou par programmation
+* de facilement envoyer des messages via ce protocole sous différents formats (Binaire, texte) 
+* une *API Client* afin de créer un Client Endpoint en Java pour communiquer sur ce protocole
+* une intégration dans *Java EE Web Profile*
 
 NOTE: L'implémentation de référence Java pour l'API WebSocket est https://tyrus.java.net/[le projet Tyrus]
 
+=== WebSocket Server Endpoint
+
+La création d'un WebSocket Endpoint est très simple, puisqu'qil suffit d'annoter le POJO la classe avec *@ServerEndpoint* et une méthode avec *@OnMessage*
+====
+[source, java]
+----
+import javax.websocket.OnMessage;
+import javax.websocket.ServerEndpoint;
+
+@ServerEndpoint("/echo") // <1>
+public class EchoServer {
+
+	@OnMessage // <2>
+	public String handleMessage(String message){
+		return "Thanks for the message: " + message;
+	}
+
+}
+----
+<1> Il suffit d'annoter la classe avec l'annotation @ServerEndpoint et de préciser l'URL d'accès à ce Endpoint
+<2> la méthode handleMessage va traiter les messages reçus 
+====
+
+[cols="2*", options="header"] 
+|===
+|Annotation
+|Rôle
+|@ServerEndpoint
+|Déclare un Server Endpoint
+|@ClientEndpoint
+|Déclare un Client Endpoint
+|@OnOpen
+|Défini la méthode appelée pour gérer l'évenement 
+|@OnMessage
+|220 ms
+|@OnError
+|220 ms
+|@OnClose
+|220 ms
+|===
+
+
+=== WebSocket Client Endpoint
+
+
 == Application US OPEN
 
-=== WebSocket Endpoint
+
 
 ==== Dépendances Maven Java EE 7
 
