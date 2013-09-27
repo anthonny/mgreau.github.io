@@ -14,7 +14,7 @@ Maxime Gréau
 :link-javaee7: http://jcp.org/en/jsr/detail?id=342
 :link-jsr356: http://jcp.org/en/jsr/detail?id=356
 :link-adoptjsr-jsr356: https://glassfish.java.net/adoptajsr/jsr356.html
-:link-jsapi: http://dev.w3.org/html5/websockets/
+:link-w3c-api: http://w3.org/TR/websockets/
 :link-rfc6455: http://tools.ietf.org/html/rfc6455
 :link-rfc2616: http://tools.ietf.org/html/rfc2616
 :link-rfc2616-upgrade: http://tools.ietf.org/html/rfc2616#section-14.42
@@ -173,16 +173,43 @@ Chaque peer peut envoyer un message spécifique afin de clôturer la connexion. 
 
 Dans Java EE7, le code côté "peer server" est en Java alors que le code côté "peer client" est en Java ou en Javascript.
 
-== WebSocket API (HTML5)
+== W3C : WebSocket API (HTML5)
 
-La spécification W3C est en cours de finalisation. Elle définit les méthodes Javascript suivantes :
+La {link-w3c-api}[spécification W3C] est en cours de finalisation. Elle définit les méthodes Javascript suivantes :
 
-* onOpen
-* onError
-* onMessage
-* send
+[source, javascript]
+----
+[Constructor(DOMString url, optional (DOMString or DOMString[]) protocols)]
+interface WebSocket : EventTarget {
+  readonly attribute DOMString url;
 
-== JSR 386 : API pour WebSocket
+  // ready state
+  const unsigned short CONNECTING = 0;
+  const unsigned short OPEN = 1;
+  const unsigned short CLOSING = 2;
+  const unsigned short CLOSED = 3;
+  readonly attribute unsigned short readyState;
+  readonly attribute unsigned long bufferedAmount;
+
+  // networking
+           attribute EventHandler onopen;
+           attribute EventHandler onerror;
+           attribute EventHandler onclose;
+  readonly attribute DOMString extensions;
+  readonly attribute DOMString protocol;
+  void close([Clamp] optional unsigned short code, optional DOMString reason);
+
+  // messaging
+           attribute EventHandler onmessage;
+           attribute DOMString binaryType;
+  void send(DOMString data);
+  void send(Blob data);
+  void send(ArrayBuffer data);
+  void send(ArrayBufferView data);
+};
+----
+
+== JSR 386 : Java API pour WebSocket
 
 La JSR 386 définit une {link-jsr356}[API Java pour WebSocket] qui propose :
 
@@ -196,7 +223,7 @@ NOTE: L'implémentation de référence Java pour l'API WebSocket est https://tyr
 
 === WebSocket Server Endpoint
 
-La création d'un WebSocket Endpoint est très simple, puisqu'qil suffit d'annoter le POJO la classe avec *@ServerEndpoint* et une méthode avec *@OnMessage*
+La transformation d'un POJO vers un WebSocket Server Endpoint est très simple, puisqu'il suffit d'annoter la classe avec *@ServerEndpoint* et une méthode avec *@OnMessage* :
 ====
 [source, java]
 ----
@@ -213,11 +240,11 @@ public class EchoServer {
 
 }
 ----
-<1> Il suffit d'annoter la classe avec l'annotation @ServerEndpoint et de préciser l'URL d'accès à ce Endpoint
-<2> la méthode handleMessage va traiter les messages reçus 
+<1> Il suffit d'annoter la classe avec l'annotation @ServerEndpoint et de préciser l'URI d'accès à ce Endpoint
+<2> la méthode handleMessage va traiter les messages reçus et renvoyer une chaîne de caractères
 ====
 
-[cols="2*", options="header"] 
+[cols="2", options="header"] 
 |===
 |Annotation
 |Rôle
@@ -226,13 +253,13 @@ public class EchoServer {
 |@ClientEndpoint
 |Déclare un Client Endpoint
 |@OnOpen
-|Défini la méthode appelée pour gérer l'évenement 
+|Défini la méthode appelée pour gérer l'évenement d'ouverture de la connexion
 |@OnMessage
-|220 ms
+|Défini la méthode appelée pour gérer l'évenement de réception d'un message
 |@OnError
-|220 ms
+|Défini la méthode appelée pour gérer l'évenement lors d'une erreur
 |@OnClose
-|220 ms
+|Défini la méthode appelée pour gérer l'évenement de clôture de la connexion
 |===
 
 
@@ -332,7 +359,7 @@ function createWebSocket(host) {
 --
 
 
-[TIP]
+[NOTE]
 ====
 Pour savoir quels sont les *navigateurs compatibles avec l'API WebSocket*, http://caniuse.com/#search=websocket[consultez le site caniuse.com]. Aujourd'hui, les dernières versions des navigateurs sont compatbiles exceptées pour Opéra mini et Android Browser, qui représentent, à eux deux, seulement 3% du traffic web. 
 ====
@@ -382,7 +409,7 @@ Ensuite pour des informations plus poussées sur des points précis, il n'y a ri
 
 [bibliography]
 - {link-rfc6455}[RFC 6455: The WebSocket Protocol] - 'Spécification IETF'
-- {link-jsapi}[W3C: The WebSocket API] - 'Spécification W3C' (Early Draft 26/07/2013)
+- {link-w3c-api}[W3C: The WebSocket API] - 'Spécification W3C' (Candidate Recommandation)
 - {link-jsr356}[JSR 356: Java API for WebSocket Protocol] - 'Spécification Java'
 - {link-adoptjsr-jsr356}[Adopt a JSR - JSR 356]
 - {link-arungupta-jugsf}[Java EE 7 & WebSocket API] - 'Conférence Arun Gupta SF' (à partir de la 46e minute)
