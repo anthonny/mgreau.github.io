@@ -329,12 +329,17 @@ c.connectToServer(HelloClient.class, "hello");
 
 == Application US OPEN
 
-
+L'application exemple est un WAR issue d'un projet 
 
 ==== Dépendances Maven Java EE 7
 
+[[eg-callouts]]
+.pom.xml
+====
 [source, xml]
 ----
+<project>
+...
 <properties>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<!-- Java EE 7 -->
@@ -349,34 +354,80 @@ c.connectToServer(HelloClient.class, "hello");
 		<scope>provided</scope>
 	</dependency>
 </dependencies>
+...
+</project>
 ----
 <1> il est important d'utiliser les dépendances de la spécification Java EE 7 afin de pouvoir déployer l'application dans plusieurs serveurs d'applications Java EE sans changement de code (Wildfly, Glassfish...)
+====
 
 ==== Créer le Server Endpoint
 
+[[eg-callouts]]
+.src/main/java/com/mgreau/wildfly/websocket/MatchEndpoint.java
+====
 [source,java]
 ----
 @ServerEndpoint( 						
 		value = "/matches/{match-id}",  // <1>
-		        decoders = { MessageDecoder.class }, 
-		        encoders = { MatchMessageEncoder.class, BetMessageEncoder.class }
+		        decoders = { MessageDecoder.class }, // <2>
+		        encoders = { MatchMessageEncoder.class, BetMessageEncoder.class } // <3>
 		)
 public class MatchEndpoint {
+
+	private static final Logger logger = Logger.getLogger("MatchEndpoint");
+
+	/* Queue for all open WebSocket sessions */
+	static Queue<Session> queue = new ConcurrentLinkedQueue<>();
+
+	@OnOpen
+	public void openConnection(Session session, 
+				@PathParam("match-id") String matchId) {	// <4>
+	    /* Register this connection in the queue */
+	    queue.add(session);
+	    session.getUserProperties().put(matchId, true);
+	    logger.log(Level.INFO, "Connection opened for game : " + matchId);
+	}
+
+	public static void send(MatchMessage msg, String matchId) {
+		try {
+		    /* Send updates to all open WebSocket sessions for this match */
+		    for (Session session : queue) {
+		    	if (Boolean.TRUE.equals(session.getUserProperties().get(matchId))){
+		    		if (session.isOpen()){
+		        		session.getBasicRemote().sendObject(msg);
+		                logger.log(Level.INFO, "Score Sent: {0}", msg);
+		    		}
+		    	}
+		    }
+		} catch (IOException | EncodeException e) {
+		    logger.log(Level.INFO, e.toString());
+		}   
+	}
+
+
+	@OnMessage
+	public void message(final Session session, BetMessage msg) {	// <5>
+	    logger.log(Level.INFO, "Received: Bet Match Winner - {0}", msg.getWinner());
+	    session.getUserProperties().put("betMatchWinner", msg);
+	}
+...
+}
+
 ----
-<1> cet Ednpoint est 
+<1>  URI pour accéder à cet Endpoint, comme le context-root de l'application est /usopen, un exemple d'URL est ws://<host>:<port>/usopen/matches/1234
+<2> la classe MessageDecoder permet de transformer le flux JSON entrant pour le pari sur le vainqueur en Objet BetMessage
+<3> les 2 encoders permettent de transformer les objets métiers MatchMessage et BetMessage en flux JSON
+<4> l'annotation @PathParam permet ici d'extraire l'élément de la requête WS et de passer la valeur en paramètre de la méthode
+====
 
 ==== Encoder et Décoder les messages échangés
 
+[[eg-callouts]]
+.src/main/java/com/mgreau/wildfly/websocket/encoders/MatchMessageEncoder.java
+====
 [source, java]
 --
 public class MatchMessageEncoder implements Encoder.Text<MatchMessage> {
-	@Override
-	public void init(EndpointConfig ec) {
-	}
-
-	@Override
-	public void destroy() {
-	}
 
 	@Override
 	public String encode(MatchMessage m) throws EncodeException {
@@ -388,37 +439,46 @@ public class MatchMessageEncoder implements Encoder.Text<MatchMessage> {
 					Json.createObjectBuilder()
 							.add("serve", m.getMatch().getServe())
 							.add("title", m.getMatch().getTitle())
-							.add("players",
-
+							...
+		}
+	}
 --
+====
 
 === Client Web HTML5
 
+[[eg-callouts]]
+.src/main/webapp/websocket.js
+====
 [source, javascript, options="nowrap"]
 --
+var wsUrl;
+if (window.location.protocol == 'https:') {
+	wsUrl = 'wss://' + window.location.host + ':8443/usopen/matches/1234';
+} else {
+	wsUrl = 'ws://' + window.location.host + ':8000/usopen/matches/1234';
+}
+
 function createWebSocket(host) {
-	if (!window.WebSocket) {
-		var spanError = document.createElement('span');
-		spanError.setAttribute('class', 'alert alert-danger');
-		spanError.innerHTML = "Votre navigateur ne supporte pas les WebSockets!";
-		document.body.appendChild(spanError);
-		return false;
-	} else {
+	...
 		socket = new WebSocket(host);
 		socket.onopen = function() {
-			document.getElementById("m1-status").innerHTML = 'CONNECTING...';
+			document.getElementById("m1-status").innerHTML = 'CONNECTED...';
 		};
 		socket.onclose = function() {
 			document.getElementById("m1-status").innerHTML = 'FINISHED';
 		};
-		socket.onerror = function() {
-			document.getElementById("m1-status").innerHTML = 'ERROR - Please refresh this page';
-		};
+		...
 		socket.onmessage = function(msg) {
 			try { 
+				console.log(data);
+				var obj = JSON.parse(msg.data);
+			}
+		}
 
+} 
 --
-
+====
 
 [NOTE]
 ====
