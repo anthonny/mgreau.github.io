@@ -313,7 +313,7 @@ public class HelloClient {
 
 	@OnMessage 
 	public String message(String message){
-		//
+		// traitement
 	}
 }
 
@@ -342,8 +342,8 @@ L'arborescence du projet est la suivante :
 ----
 + src/main/java
    |+ com.mgreau.wildfly.websocket
-      |+ decoders       // <1>
-         |- MessageDecoder.java   
+      |+ decoders       
+         |- MessageDecoder.java   // <1>
       |+ encoders       // <2>
          |- BetMessageEncoder.java   
          |- MatchMessageEncoder.java 
@@ -363,8 +363,8 @@ L'arborescence du projet est la suivante :
 pom.xml		
 ----
 <1> Decode le message JSON provenant du 'peer client' concernant le pari sur le vainqueur en POJO ('BetMessage')
-<2> Encode à destination des 'peers clients' en JSON (via JSON-P), les messages contenant le détail du match et le résultat du pari sur le vainqueur
-<3> POJO représentant les types de messages échangés entre peers
+<2> Encode à destination des 'peers clients', en JSON (via JSON-P), les messages contenant le détail du match et le résultat du pari sur le vainqueur
+<3> POJOs représentant les types de messages échangés entre peers
 <4> WebSocket Server Endpoint de l'application ('peer server')
 <5> EJB @Startup permettant d'initialiser l'application lors du déploiement 
 <6> POJO pour gérer les informations du match
@@ -457,7 +457,7 @@ public class MatchEndpoint {
 ----
 <1>  URI pour accéder à cet Endpoint, comme le context-root de l'application est '/usopen', un exemple d'URL est +ws://<host>:<port>/usopen/matches/1234+
 <2> la classe 'MessageDecoder' permet de transformer le flux JSON entrant pour le pari sur le vainqueur en POJO 'BetMessage'
-<3> les 2 encoders permettent de transformer les POJO 'MatchMessage' et 'BetMessage' en flux JSON
+<3> les 2 encodeurs permettent de transformer les POJO 'MatchMessage' et 'BetMessage' en flux JSON
 <4> l'annotation +@PathParam+ permet ici d'extraire l'élément de la requête WS et de passer la valeur (identifiant du match) en paramètre de la méthode, il est ainsi possible de gérer plusieurs matchs avec des clients différents pour chaque match.
 <5> Envoi du message concernant le match aux peers connectés, grâce à l''Encoder' il suffit de passer en paramètre un objet 'MatchMessage'
 <6> Gestion de la réception des messages de pari sur le vainqueur du macth, grâce au 'Decoder' la méthode prend en paramètre un objet 'BetMessage'
