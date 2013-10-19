@@ -119,7 +119,7 @@ image::posts/WebSocket_Protocol.png[Schéma d'explications du protocole WebSocke
 La phase nommée *Handshake* correspond à un *unique échange requête/réponse HTTP* entre l'initiateur de la connexion (peer client)  et le peer serveur. Cet échange HTTP est spécifique car il utilise la notion {link-rfc2616-upgrade}[*d'Upgrade, définie dans la spécification HTTP*.] + 
 Le principe est simple : *l'Upgrade HTTP* permet au client de communiquer avec le serveur pour lui demander de changer de protocole de communication et ainsi faire en sorte que le client et le serveur utilisent un protocole autre que HTTP pour discuter.
 
-[[eg-callouts]]
+[[eg1-callouts]]
 .Exemple de Requête HTTP Handshake
 ====
 [source, text]
@@ -139,7 +139,7 @@ Sec-WebSocket-Version:13
 
 ====
 
-[[eg-callouts]]
+[[eg2-callouts]]
 .Exemple de Réponse HTTP Handshake
 ====
 [source, text]
@@ -181,7 +181,7 @@ La spécification W3C de cette {link-w3c-api}[API Javascript pour WebSocket] est
 * les méthodes (+send(DOMString data)+, +send(Blob data)+) avec lesquelles il est possible d'envoyer différents types de flux (texte, binaire) vers le serveur Endpoint
 
 
-[[eg-callouts]]
+[[eg3-callouts]]
 .Exemple de code Javascript, issue de http://websocket.org
 ====
 [source, javascript]
@@ -303,7 +303,7 @@ Un exemple concret est présenté dans la suite de l'article.
 
 L'API propose donc également le support pour créer des Endpoints côté client en Java.
 
-[[eg-callouts]]
+[[eg4-callouts]]
 .Exemple de Client Endpoint en Java
 ====
 [source, java]
@@ -335,8 +335,8 @@ Outre la gestion classique du cycle de vie WebSocket, le workflow d'envoi de mes
 
 L'arborescence du projet est la suivante :
 
-[[eg-callouts]]
-.Structure du projet
+[[eg5-callouts]]
+.Structure du projet Maven
 ====
 [source, text]
 ----
@@ -373,7 +373,7 @@ pom.xml
 
 === Dépendances Maven Java EE 7
 
-[[eg-callouts]]
+[[eg6-callouts]]
 .pom.xml
 ====
 [source, xml]
@@ -404,8 +404,8 @@ pom.xml
 
 Cet Endpoint permet de recevoir les messages concernant les paris sur le vainqueur du match et également d'envoyer aux 'peers clients' les informations du déroulement du match.
 
-[[eg-callouts]]
-.src/main/java/com/mgreau/wildfly/websocket/MatchEndpoint.java
+[[eg7-callouts]]
+.Server Endpoint : MatchEndpoint.java
 ====
 [source,java]
 ----
@@ -468,7 +468,7 @@ public class MatchEndpoint {
 Pour encoder ou décoder les messages échangés entre peers, il suffit d'implémenter l'interface adéquate selon le type de message (Texte, Binaire) et le sens de traitement (encodage, décodage), puis de redéfinir la méthode associée. + 
 Dans l'exemple ci-dessous, il s'agit de l'encodeur pour le POJO MatchMessage vers le format JSON. L'API utilisée pour réaliser ce traitement est une des nouvelles API de Java EE 7 : http://jcp.org/en/jsr/detail?id=353[Java API for JSON Processiong (JSON-P)]
 
-[[eg-callouts]]
+[[eg8-callouts]]
 .src/main/java/com/mgreau/wildfly/websocket/encoders/MatchMessageEncoder.java
 ====
 [source, java]
@@ -499,8 +499,8 @@ public class MatchMessageEncoder implements Encoder.Text<MatchMessage> {
 === Client Web HTML5
 L'unique page HTML de cette application charge le fichier *websocket.js* pour mettre en oeuvre l'API Javascript WebSocket et ainsi intéragir avec le Server Endpoint Java.
 
-[[eg-callouts]]
-.src/main/webapp/websocket.js
+[[eg9-callouts]]
+.API Javascript : websocket.js
 ====
 [source, javascript, options="nowrap"]
 --
@@ -619,10 +619,10 @@ Les résultats de ses tests, présentés ci-dessous, sont éloquents :
 |986 ms
 |57 ms
 |Envoi de 1000 messages de 100 bytes
-|10210 ms
+|10 210 ms
 |179 ms
 |Envoi de 5000 messages de 1000 bytes
-|544449 ms
+|54 449 ms
 |1202 ms
 |===
 
