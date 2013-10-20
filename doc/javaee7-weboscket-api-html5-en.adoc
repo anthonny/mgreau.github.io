@@ -5,7 +5,7 @@ Maxime Gréau - http://mgreau.com
 :toc-placement: preamble
 :toc-title: Table des matières de l'article
 :source-highlighter: coderay
-:imagesdir: ../posts/images
+:imagesdir: ../images/posts/
 :experimental:
 :mdash: &#8212;
 :language: asciidoc
@@ -559,26 +559,26 @@ function createWebSocket(host) {
 	}
 } 
 --
-<1> Choix du protocole WS selon le type de protocole HTTP utilisé (sécurisé ou non)
+<1> Choose the appropriate WebSocket protocol according to the HTTP protocol currently used (secure or not)
 <2> Test du support par le navigateur de l'API WebSocket
-<3> Création du WebSocket
+<3> Create the WebSocket object
 <4> Sur l'Event-Handler +onmessage+ , traitement du flux JSON reçu via le 'peer serveur'
 <5> Test du type d'objet reçu (Match ou Pari) afin de réaliser le traitement adéquat avec le DOM
 ====
 
 [NOTE]
 ====
-Pour savoir quels sont les *navigateurs compatibles avec l'API WebSocket*, http://caniuse.com/#search=websocket[consultez le site caniuse.com]. Aujourd'hui, les dernières versions des navigateurs sont compatbiles exceptées pour Opéra mini et Android Browser, qui représentent, à eux deux, seulement 3% du traffic web. 
+To find out which browsers are compatible with *WebSocket API* http://caniuse.com/#search=websocket[visit the website caniuse.com]. Today, the latest versions of browsers are compatibles excepted for Android and Opera Mini Browser, which represent, both together, only 3% of web traffic.
 ====
 
 === Source code on Github
-Vous pouvez *forker le code sur Github* à l'URL +*https://github.com/mgreau/javaee7-websocket*+
+You can *fork this project on Github* at +*https://github.com/mgreau/javaee7-websocket*+
 
-Cette application exemple est très basique, les idées d'améliorations possibles sont nombreuses : gérer un tournoi avec plusieurs matchs, parier sur d'autres critères, voir en live les paris des autres internautes...
+This sample application is very basic, there could be many improvements like : managing a tournament with several games, betting on other criteria, see betting of other users in live...
 
 [TIP]
 ====
-'Une feature, qui serait particulièrement intéressante techniquement, serait de créer un nouveau type de pari sur *la zone de terrain des points gagnants*. Il suffit de dessiner le terrain grâce à l'API HTML5 Canvas et de gérer les coordonnées de l'emplacement cliqué par l'internaute (comme zone gagnante) puis de les comparer aux coordonnées réelles lors d'un point gagnant.'
+'A feature that could be interesting technically, would be to create a new type of *bet based on the coordinates of each winning point*. Simply draw the ground through the HTML5 Canvas API and manage the coordinates selected by the user (such as winning point) and then compare with the actual coordinates at a point winner. '
 ====
 
 === Build and Deploy the WAR

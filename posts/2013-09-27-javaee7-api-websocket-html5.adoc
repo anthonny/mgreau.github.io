@@ -562,7 +562,7 @@ function createWebSocket(host) {
 
 [NOTE]
 ====
-Pour savoir quels sont les *navigateurs compatibles avec l'API WebSocket*, http://caniuse.com/#search=websocket[consultez le site caniuse.com]. Aujourd'hui, les dernières versions des navigateurs sont compatbiles exceptées pour Opéra mini et Android Browser, qui représentent, à eux deux, seulement 3% du traffic web. 
+Pour savoir quels sont les *navigateurs compatibles avec l'API WebSocket*, http://caniuse.com/#search=websocket[consultez le site caniuse.com]. Aujourd'hui, les dernières versions des navigateurs sont compatibles exceptées pour Opéra mini et Android Browser, qui représentent, à eux deux, seulement 3% du traffic web. 
 ====
 
 === Sources de l'exemple sur Github
