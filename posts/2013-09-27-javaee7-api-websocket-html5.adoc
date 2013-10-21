@@ -296,7 +296,7 @@ Afin de gérer efficacement les messages provenant des 'peers client' ou à dest
 Quelque soit l'algorithme de transformation, il va alors être possible de transformer  :
 
 * le POJO métier vers un flux au format désiré pour l'envoi (JSON, XML, Binaire...)
-* les flux entrants dans format spécfique (JSON, XML..) vers le POJO métier
+* les flux entrants dans format spécifique (JSON, XML..) vers le POJO métier
 
 Ainsi, le code de l'application est organisé de telle façon que la logique métier n'est pas impactée par le type et le format de flux échangés entre le 'peer serveur' et les 'peers clients'.
 Un exemple concret est présenté dans la suite de l'article.
@@ -462,7 +462,7 @@ public class MatchEndpoint {
 <3> les 2 encodeurs permettent de transformer les POJO 'MatchMessage' et 'BetMessage' en flux JSON
 <4> l'annotation +@PathParam+ permet ici d'extraire l'élément de la requête WS et de passer la valeur (identifiant du match) en paramètre de la méthode, il est ainsi possible de gérer plusieurs matchs avec des clients différents pour chaque match.
 <5> Envoi du message concernant le match aux peers connectés, grâce à l''Encoder' il suffit de passer en paramètre un objet 'MatchMessage'
-<6> Gestion de la réception des messages de pari sur le vainqueur du macth, grâce au 'Decoder' la méthode prend en paramètre un objet 'BetMessage'
+<6> Gestion de la réception des messages de pari sur le vainqueur du match, grâce au 'Decoder' la méthode prend en paramètre un objet 'BetMessage'
 ====
 
 === Encoder et Décoder les messages échangés
