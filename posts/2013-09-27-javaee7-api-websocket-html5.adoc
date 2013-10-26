@@ -29,9 +29,7 @@ Après la lecture de cet article, vous devriez être en mesure de comprendre la 
 
 [quote#think, Arun Gupta (Java EE Evangelist chez Oracle) - Devoxx UK 2013]
 ----
-____*
 WebSocket gives you bidirectionnal, full duplex, communication channel over a single TCP.
-____*
 ----
 
 pass::[more]
@@ -42,8 +40,8 @@ Dans la continuité des versions Java EE 5 et Java EE 6, *Java EE 7* propose tou
 Cette version agrémente les versions précédentes avec 3 objectifs principaux :
 
 * s'interfacer avec *HTML5* (WebSocket API, JSON-P API, JAX-RS)
-* avoir une *meilleure productivité* (JMS API)
-* répondre aux *besoins des entreprises* (Batch API)
+* avoir une *meilleure productivité* (nouvelles annotations, moins de code inutile, meilleure cohésion entre JSRs)
+* répondre aux *besoins des entreprises* (Batch API, JMS API 2.0)
 
 [[javaee7_intro]]
 .Les 3 objectifs de Java EE 7
