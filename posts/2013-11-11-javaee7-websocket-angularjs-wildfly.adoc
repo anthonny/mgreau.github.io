@@ -700,7 +700,7 @@ WildFly 8 uses its new +*Web Server called http://undertow.io[Undertow]*+ which 
 
 [TIP]
 ====
-'I didn't test this application on Glassfish 4, but since I'm using only Java EE 7 API dependencies, it could work with the same code without problem. Let me know if you have '
+'I didn't test this application on Glassfish 4, but since I'm using only Java EE 7 API dependencies, it could work with the same code without problem. Let me know if you have troubles with GlassFish. '
 ====
 
 == Benchmark : WebSocket VS REST
