@@ -726,7 +726,7 @@ The benchmark results, shown below, are quite eloquent :
 |57 ms (74 ms)*
 |Sending 1000 messages of 100 bytes
 |10 210 ms (4 636 ms)*
-|179 ms (681 ms)*
+|179 ms (288 ms)*
 |Sending 5000 messages of 1000 bytes
 |54 449 ms (18 049 ms)*
 |1202 ms (2862 ms)*
