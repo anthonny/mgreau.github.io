@@ -677,7 +677,7 @@ Prerequisite :
 
 * JDK 7
 * Apache Maven 3.0.4+
-* Java EE 7 Application Server : Wildfly 8
+* Java EE 7 Application Server (WildFly 8)
 ====
 In order to build the WAR, you just have to execute the Maven command below ;
 [source, text]
@@ -697,11 +697,11 @@ The usopen application is then available at :
 * http://localhost:8080/usopen/ for the simple case with only native Javascript
 * http://localhost:8080/usopen/matches for the version with severals matches and AngularJS
 
-WilFly uses its new Web Server called {http://undertow.io}[Undertow] which is the replacing of Tomcat.
+WildFly 8 uses its new +*Web Server called http://undertow.io[Undertow]*+ which replaces Tomcat.
 
 [TIP]
 ====
-'I didn't test this application on Glassfish 4, but since I'm using only Java EE 7 API dependencies, it could work with the same code without problem.'
+'I didn't test this application on Glassfish 4, but since I'm using only Java EE 7 API dependencies, it could work with the same code without problem. Let me know if you have '
 ====
 
 == Benchmark : WebSocket VS REST
@@ -720,18 +720,22 @@ The benchmark results, shown below, are quite eloquent :
 *WebSocket Endpoint*
 |Sending 10 messages of 1 byte
 |220 ms
-|7 ms
+|7 ms (29ms)*
 |Sending 100 messages of 10 bytes
 |986 ms
-|57 ms
+|57 ms (74 ms)*
 |Sending 1000 messages of 100 bytes
 |10 210 ms
-|179 ms
+|179 ms (681 ms)*
 |Sending 5000 messages of 1000 bytes
 |54 449 ms
-|1202 ms
+|1202 ms (3376 ms)*
 |===
 
+[NOTE]
+====
+'Values between ()* represents the same tests on my laptop (MacBook Pro 2013 i5 - 8Go - 128SSD) with WildFly 8.0.0-beta1 with default configuration.'
+====
 
 == References about WebSocket
 
