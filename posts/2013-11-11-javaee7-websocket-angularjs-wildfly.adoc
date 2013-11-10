@@ -656,7 +656,7 @@ So there are 4 JS files which contains :
 
 [NOTE]
 ====
-'This post is not a tutorial about AngularJS since it's my first sample with this framework. But it was a quick solution to handle several matches on the client side. You can see the 3 blogs posts followed to better understand the JS code : {link-ng-directives-fr}[directives in French] and {link-ng-directives-en}[Refactoring to AngularJS directives] and {link-ng-ws}[AngularJS WebSocket Service example]'
+'This post is not a tutorial about AngularJS since it's my first app with this framework. But it was a quick solution to handle several matches on the client side. You can read the 3 following posts to better understand the JS code : {link-ng-directives-fr}[directives in French] and {link-ng-directives-en}[Refactoring to AngularJS directives] and {link-ng-ws}[AngularJS WebSocket Service example]'
 ====
 
 === Source code on Github
@@ -729,12 +729,12 @@ The benchmark results, shown below, are quite eloquent :
 |179 ms (681 ms)*
 |Sending 5000 messages of 1000 bytes
 |54 449 ms (18 049 ms)*
-|1202 ms (3376 ms)*
+|1202 ms (2862 ms)*
 |===
 
 [NOTE]
 ====
-'Values between ()* represents the same tests on my laptop (MacBook Pro 2013 i5 - 8Go - 128SSD) with WildFly 8.0.0-beta1 with default configuration.'
+'Values between ()* represent the same tests on my laptop (MacBook Pro 2013 i5 - 8Go - 128SSD) with WildFly 8.0.0-beta1 with default configuration.'
 ====
 
 == References about WebSocket
