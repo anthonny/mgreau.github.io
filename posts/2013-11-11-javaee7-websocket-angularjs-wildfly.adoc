@@ -719,16 +719,16 @@ The benchmark results, shown below, are quite eloquent :
 |Total execution time +
 *WebSocket Endpoint*
 |Sending 10 messages of 1 byte
-|220 ms
+|220 ms (63 ms)*
 |7 ms (29ms)*
 |Sending 100 messages of 10 bytes
-|986 ms
+|986 ms (587 ms)*
 |57 ms (74 ms)*
 |Sending 1000 messages of 100 bytes
-|10 210 ms
+|10 210 ms (4 636 ms)*
 |179 ms (681 ms)*
 |Sending 5000 messages of 1000 bytes
-|54 449 ms
+|54 449 ms (18 049 ms)*
 |1202 ms (3376 ms)*
 |===
 
