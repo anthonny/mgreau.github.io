@@ -35,7 +35,6 @@ v1.0, November 11, 2013: First English version
 ====
 This blog post describes the *{link-jsr356}[Java API for WebSocket Protocol (JSR 356)]* (which is one of four newest JSRs for the *{link-javaee7}[Java EE 7]* platform) and provides a concrete application deployed on {link-wildfly}[WildFly 8] and {link-demo}[available online on OpenShift].
 
-* {link-pdf-en}[Download an English PDF version]
 * [FR] La version française ({link-html-fr}[HTML] ou {link-pdf-fr}[PDF]) de ce post est basée uniquement sur la démonstration avec l'API Javascript sans AngularJS.
 ====
 
