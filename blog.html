@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="google-site-verification" content="EoXo80HtINVpGJQ5R7FQT-UhMzmvg6Lux-I_S6Wlhb8"><title>mgreau.com</title><link rel="stylesheet" href="/stylesheets/bootstrap.css"><link rel="stylesheet" href="/stylesheets/bootstrap-responsive.css"><link rel="stylesheet" href="/stylesheets/font-awesome.min.css"><link rel="stylesheet" href="/plugins/flexslider/flexslider.css"><link rel="stylesheet" href="/stylesheets/theme-style.css"><link rel="stylesheet" href="/stylesheets/alternative-colour.css"><link rel="stylesheet" href="/stylesheets/custom-style.css"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Condiment"><script src="/plugins/retina/retina.js"></script></head><body class="has-navbar-fixed-top page-index"><div class="wrapper" id="navigation"><div class="navbar navbar-fixed-top"><div class="navbar-inner"><div class="container">          <div class="brand"><h1><a href="/"><span class="em">[site.title]</span></a></h1></div><a class="mobile-toggle-trigger"><i class="icon-reorder"></i></a><a class="mobile-toggle-trigger scroll-nav" data-js="scroll-show"><i class="icon-reorder"></i></a><div class="mobile-toggle pull-right"><ul class="nav" id="main-menu"><li class=""><a href="/">About</a></li><li class=""><a href="/books.html">Books</a></li><li class=""><a href="/blog.html">Blog</a></li><li class=""><a href="/experience.html">Work / Experience</a></li><li class=""><a href="#contact" class="stamp">Contact</a></li>              </ul><g:plusone size="medium"></g:plusone><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div></div></div></div></div><div id="content"><div class="container"><h2>Blog</h2><div class="row-fluid"><div class="span12 service"> <div class="pagination"><div class="previous" style="width:50%; float: left"></div><div class="next" style="width:50%; float: right; text-align: right"></div></div><div style="clear: both"></div><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html">Java EE 7 and WebSocket API for Java (JSR 356) with AngularJS on WildFly</a></h1><h4><time class="pubdate" datetime="2013-11-11T00:00:00+00:00">Monday, November 11, 2013</time></h4></header><div class="entry-content"></div><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Overview</div>
+<div class="paragraph">
+<p>This blog post describes the <strong><a href="http://jcp.org/en/jsr/detail?id=356">Java API for WebSocket Protocol (JSR 356)</a></strong> (which is one of four newest JSRs for the <strong><a href="http://jcp.org/en/jsr/detail?id=342">Java EE 7</a></strong> platform) and provides a concrete application deployed on <a href="http://wildfly.org">WildFly 8</a> and <a href="http://wildfly-mgreau.rhcloud.com/usopen/live.html">available online on OpenShift</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[FR] La version française (<a href="http://mgreau.com/posts/2013/09/27/javaee7-api-websocket-html5.html">HTML</a> ou <a href="http://mgreau.com/doc/javaee7-api-websocket-html5.pdf">PDF</a>) de ce post est basée uniquement sur la démonstration avec l&#8217;API Javascript sans AngularJS.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Once you will have read this post, you will be able to understand <a href="https://twitter.com/arungupta">Arun Gupta</a>'s definition about what is it possible to do with WebSocket technology.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>"WebSocket gives you bidirectionnal, full duplex, communication channel over a single TCP."&#10;-- Arun Gupta (Java EE Evangelist chez Oracle) - Devoxx UK 2013</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><footer class="entry-footer"><div class="tags"></div></footer><hr></article><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2013/09/27/javaee7-api-websocket-html5.html">Java EE 7 et l&#8217;API Java pour WebSocket (JSR 356)</a></h1><h4><time class="pubdate" datetime="2013-09-27T00:00:00+00:00">Friday, September 27, 2013</time></h4></header><div class="entry-content"></div><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-note" title="Note"></i>
+</td>
+<td class="content">
+Cet article présente et met en oeuvre à travers un exemple concret et <a href="http://wildfly-mgreau.rhcloud.com/usopen/">disponible en ligne</a>, une des 4 nouvelles JSRs de <strong><a href="http://jcp.org/en/jsr/detail?id=342">Java EE 7</a></strong>, à savoir <strong><a href="http://jcp.org/en/jsr/detail?id=356">l&#8217;API Java pour communiquer via le protocole WebSocket (JSR 356)</a></strong>, .
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Après la lecture de cet article, vous devriez être en mesure de comprendre la définition de ce qu&#8217;il est possible de faire avec le protocole WebSocket, donnée lors de Devoox UK par <a href="https://twitter.com/arungupta">Arun Gupta</a> :</p>
+</div>
+<div id="think" class="listingblock">
+<div class="content">
+<pre>WebSocket gives you bidirectionnal, full duplex, communication channel over a single TCP.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><footer class="entry-footer"><div class="tags"><a href="/posts/tags/javaee7"><span class="label">javaee7</span></a><a href="/posts/tags/javaee"><span class="label">javaee</span></a><a href="/posts/tags/websocket"><span class="label">websocket</span></a><a href="/posts/tags/html5"><span class="label">html5</span></a><a href="/posts/tags/wildfly"><span class="label">wildfly</span></a></div></footer><hr></article><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2013/08/26/xstream-and-JBossEAP6.html">XStream on EAP 6 with Sun14ReflectionProvider</a></h1><h4><time class="pubdate" datetime="2013-08-26T00:00:00+00:00">Monday, August 26, 2013</time></h4></header><div class="entry-content"></div><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to use the Sun14ReflectionProvider with XStream, you have to add a dependency to the "sun.jdk" module.</p>
+</div>
+<div class="paragraph">
+<p><footer class="entry-footer"><div class="tags"><a href="/posts/tags/jboss-eap"><span class="label">jboss-eap</span></a><a href="/posts/tags/xstream"><span class="label">xstream</span></a></div></footer><hr></article><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2013/04/24/yahoomail-gmail-user-experience.html">Yahoo! Mail, t&#8217;es une messagerie, t&#8217;as pas de conversation ? non mais allô quoi !</a></h1><h4><time class="pubdate" datetime="2013-04-24T00:00:00+00:00">Wednesday, April 24, 2013</time></h4></header><div class="entry-content"></div><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-note" title="Note"></i>
+</td>
+<td class="content">
+Cet article expose mon point de vue sur l&#8217;ergonomie, l&#8217;expérience utilisateur et les services rendus (ou pas) à l&#8217;internaute par Yahoo! Mail et Gmail. Je me base sur l&#8217;expérience de mon utilisation de Yahoo! Mail depuis 14 ans et de Gmail depuis 7 ans.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><footer class="entry-footer"><div class="tags"><a href="/posts/tags/yahoomail"><span class="label">yahoomail</span></a><a href="/posts/tags/gmail"><span class="label">gmail</span></a></div></footer><hr></article><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html">JBoss EAP 4.3 / 5.1 / 6 - Java EE supported standards in each EAP releases</a></h1><h4><time class="pubdate" datetime="2012-11-30T00:00:00+00:00">Friday, November 30, 2012</time></h4></header><div class="entry-content"></div><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Language EN / Timereading 5 mn
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">This post presents, as a diagram, all Java EE standards supported in each JBoss EAP version :</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This diagram was updated in December 2013 (fixes and addition of (*) information)</p>
+</li>
+<li>
+<p>Thanks to Arun Gupta for the fixes</p>
+</li>
+<li>
+<p>The following data are based on official documentation from Oracle (JSR) and Red Hat (EAP).</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><footer class="entry-footer"><div class="tags"><a href="/posts/tags/jboss-eap"><span class="label">jboss-eap</span></a><a href="/posts/tags/javaee"><span class="label">javaee</span></a><a href="/posts/tags/jsr"><span class="label">jsr</span></a></div></footer><hr></article><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html">Subversion - corriger les propriétés d&#8217;une révision SVN</a></h1><h4><time class="pubdate" datetime="2012-07-30T00:00:00+00:00">Monday, July 30, 2012</time></h4></header><div class="entry-content"></div><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Language : FR / Temps de lecture : 10mn
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="icon-note" title="Note"></i>
+</td>
+<td class="content">
+Ce post explique comment <strong>mettre à jour les propriétés SVN d&#8217;une révision donnée</strong> d&#8217;un repository. Et notamment la propriété svn:date qui, lorsqu&#8217;elle est absente sur certaines révisions, bloque les checkout via le client <a href="http://svnkit.com/">SVNKit</a> (utilisé par défaut dans le <a href="https://wiki.jenkins-ci.org/display/JENKINS/Subversion+Plugin">plugin Subversion de Jenkins CI)</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><footer class="entry-footer"><div class="tags"><a href="/posts/tags/svn"><span class="label">svn</span></a><a href="/posts/tags/shell"><span class="label">shell</span></a></div></footer><hr></article><div class="pagination"><div class="previous" style="width:50%; float: left"></div><div class="next" style="width:50%; float: right; text-align: right"></div></div></div></div></div><footer id="footer"><div class="container"><div class="row-fluid pull-center"><div id="contact" class="social-media"><a title="My Twitter account - @mgreau" href="https://twitter.com/mgreau"><i class="icomoon-twitter-3"></i></a><a title="My G+ account"  href="https://plus.google.com/u/0/110674805154532168093/posts/p/pub"><i class="icomoon-google-plus-4"></i></a><a title="My Github account - mgreau"  href="https://github.com/mgreau"><i class="icomoon-github-3"></i></a><a title="My LinkedIn account"  href="https://fr.linkedin.com/in/mgreau"><i class="icomoon-linkedin"></i></a></div><p>Copyright 2013 © <a href="http://mgreau.com">mgreau.com</a> | Baked by Awestruct - Asciidoc</p></div></div>  </footer><script type="text/javascript"></script><script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount','UA-20147445-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script src="/javascripts/jquery.js"></script><script src="/javascripts/bootstrap.min.js"></script><script src="/plugins/flexslider/jquery.flexslider-min.js"></script><script src="/plugins/jPanelMenu/jquery.jpanelmenu.min.js"></script><script src="/plugins/jRespond/js/jRespond.js"></script><script src="/plugins/onePageNav/jquery.scrollTo.js"></script><script src="/plugins/onePageNav/jquery.nav.js"></script><script src="/javascripts/script.js"></script></body></html>

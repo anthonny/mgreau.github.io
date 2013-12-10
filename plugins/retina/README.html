@@ -1,0 +1,114 @@
+<h1 id="retinajs">retina.js</h1>
+
+<h3 id="javascript-and-less-helpers-for-rendering-high-resolution-image-variants">JavaScript and LESS helpers for rendering high-resolution image variants</h3>
+
+<p>retina.js makes it easy to serve high-resolution images to devices with retina displays</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>When your users load a page, retina.js checks each image on the page to see if there is a high-resolution version of that image on your server. If a high-resolution variant exists, the script will swap in that image in-place.</p>
+
+<p>The script assumes you use Apple's prescribed high-resolution modifier (@2x) to denote high-resolution image variants on your server.</p>
+
+<p>For example, if you have an image on your page that looks like this:</p>
+
+<pre><code>&lt;img src="/images/my_image.png" /&gt;
+</code></pre>
+
+<p>The script will check your server to see if an alternative image exists at this path:</p>
+
+<pre><code>"/images/my_image@2x.png"
+</code></pre>
+
+<h2 id="how-to-use">How to use</h2>
+
+<h3 id="javascript">JavaScript</h3>
+
+<p>The JavaScript helper script automatically replaces images on your page with high-resolution variants (if they exist). To use it, download the script and include it at the bottom of your page.</p>
+
+<ol>
+  <li>Place the retina.js file on your server</li>
+  <li>Include the script on your page (put it at the bottom of your template, before your closing &lt;/body&gt; tag)</li>
+</ol>
+
+<p><code>html
+&lt;script type="text/javascript" src="/scripts/retina.js"&gt;&lt;/script&gt;
+</code></p>
+
+<h3 id="less">LESS</h3>
+
+<p>The LESS CSS mixin is a helper for applying high-resolution background images in your stylesheet. You provide it with an image path and the dimensions of the original-resolution image. The mixin creates a media query spefically for Retina displays, changes the background image for the selector elements to use the high-resolution (@2x) variant and applies a background-size of the original image in order to maintain proper dimensions. To use it, download the mixin, import or include it in your LESS stylesheet, and apply it to elements of your choice.</p>
+
+<p><em>Syntax:</em></p>
+
+<p><code>less
+.at2x(@path, [optional] @width: auto, [optional] @height: auto);
+</code></p>
+
+<p><em>Steps:</em></p>
+
+<ol>
+  <li>Add the .at2x() mixin from retina.less to your LESS stylesheet (or reference it in an @import statement)</li>
+  <li>In your stylesheet, call the .at2x() mixin anywhere instead of using background-image</li>
+</ol>
+
+<p>This:</p>
+
+<p><code>less
+.logo {
+  .at2x('/images/my_image.png', 200px, 100px);
+}
+</code></p>
+
+<p>Will compile to:</p>
+
+<p>``` less
+.logo {
+  background-image: url('/images/my_image.png');
+}</p>
+
+<p>@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .logo {
+    background-image: url('/images/my_image@2x.png');
+    background-size: 200px 100px;
+  }
+}
+```</p>
+
+<h2 id="how-to-test">How to test</h2>
+
+<p>We use <a href="http://visionmedia.github.com/mocha/">mocha</a> for unit testing with <a href="https://github.com/visionmedia/should.js">should</a> assertions. Install mocha and should by running <code>npm install</code>.</p>
+
+<p>To run the test suite:</p>
+
+<p><code>bash
+$ npm test
+</code></p>
+
+<p>Use <a href="https://github.com/nodeapps/http-server">http-server</a> for node.js to test it. To install, run <code>npm install -g http-server</code>.</p>
+
+<p>If you've updated <code>retina.js</code> be sure to copy it from <code>src/retina.js</code> to <code>test/functional/public/retina.js</code>.</p>
+
+<p>To start the server, run:</p>
+
+<p><code>bash
+$ cd test/functional &amp;&amp; http-server
+</code></p>
+
+<p>Then navigate your browser to <a href="http://localhost:8080">http://localhost:8080</a></p>
+
+<p>After that, open up <code>test/functional/public/index.html</code> in your editor, and try commenting out the line that spoofs retina support, and reloading it.</p>
+
+<h1 id="license">License</h1>
+
+<p>(MIT License)</p>
+
+<p>Copyright (C) 2012 <a href="http://imulus.com">Imulus</a></p>
+
+<p>Copyright (C) 2012 Ben Atkin</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
