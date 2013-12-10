@@ -1,4 +1,4 @@
-= JBoss EAP 4.3 / 5.1 / 6 - Java EE supported standards in each EAP releases
+= JBoss EAP 4.3 / 5.1 / 6.2 - Java EE supported standards in each EAP releases
 Maxime Gréau
 2013-12-10
 :awestruct-layout: post
