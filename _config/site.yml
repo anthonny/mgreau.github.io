@@ -21,7 +21,7 @@ profiles:
     disqus_shortname: mgreau
     disqus_developer: true
   production:
-    base_url: http://mgreau.com
+    base_url: http://mgreau.github.io
     google_analytics: UA-20147445-1
     disqus: mgreau
     disqus_shortname: mgreau
