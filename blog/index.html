@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>mgreau.com</title><link rel="stylesheet" href="/stylesheets/bootstrap.css"><link rel="stylesheet" href="/stylesheets/bootstrap-responsive.css"><link rel="stylesheet" href="/stylesheets/font-awesome.min.css"><link rel="stylesheet" href="/plugins/flexslider/flexslider.css"><link rel="stylesheet" href="/stylesheets/theme-style.css"><link rel="stylesheet" href="/stylesheets/alternative-colour.css"><link rel="stylesheet" href="/stylesheets/custom-style.css"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Condiment"><script src="/plugins/retina/retina.js"></script></head><body class="has-navbar-fixed-top page-index"><div class="wrapper" id="navigation"><div class="navbar navbar-fixed-top"><div class="navbar-inner"><div class="container">          <div class="brand"><h1><a href="/"><span class="em">[site.title]</span></a></h1></div><a class="mobile-toggle-trigger"><i class="icon-reorder"></i></a><a class="mobile-toggle-trigger scroll-nav" data-js="scroll-show"><i class="icon-reorder"></i></a><div class="mobile-toggle pull-right"><ul class="nav" id="main-menu"><li class=""><a href="/">About</a></li><li class=""><a href="/books">Books</a></li><li class=""><a href="/blog">Blog</a></li><li class=""><a href="/experience">Work / Experience</a></li><li class=""><a href="#contact" class="stamp">Contact</a></li>              </ul></div></div></div></div></div><div id="content"><div class="container"><h2>Blog</h2><div class="row-fluid"><div class="span12 service"> <div class="pagination"><div class="previous" style="width:50%; float: left"></div><div class="next" style="width:50%; float: right; text-align: right"></div></div><div style="clear: both"></div><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2013/08/26/xstream-and-JBossEAP6/">XStream on EAP 6 with Sun14ReflectionProvider</a></h1><h4><time class="pubdate" datetime="2013-08-26T00:00:00+00:00">Monday, August 26, 2013</time></h4></header><div class="entry-content"><div class="sect1">
+<h2 id="xstream-need-to-load-class-sun-misc-unsafe">XStream need to load class "sun.misc.Unsafe"</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to use the Sun14ReflectionProvider with XStream, you have to add a dependency to the "sun.jdk" module.</p>
+</div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre class="CodeRay"><code class="xml language-xml"><span style="color:#579">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>&#10;<span style="color:#070">&lt;module</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">urn:jboss:module:1.0</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">mymodule</span><span style="color:#710">&quot;</span></span><span style="color:#070">&gt;</span>&#10;  ...&#10;  <span style="color:#070">&lt;dependencies&gt;</span>&#10;    <span style="color:#070">&lt;module</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">sun.jdk</span><span style="color:#710">&quot;</span></span> <span style="color:#070">/&gt;</span>&#10;  <span style="color:#070">&lt;/dependencies&gt;</span>&#10;<span style="color:#070">&lt;/module&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div></div><footer class="entry-footer"><div class="tags"><span class="title">tags:</span><a href="/posts/tags/"> </a><a href="/posts/tags/"> </a></div></footer></article><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2013/04/24/yahoomail-gmail-user-experience/">Yahoo! Mail, t&#8217;es une messagerie, t&#8217;as pas de conversation ? non mais allô quoi !</a></h1><h4><time class="pubdate" datetime="2013-04-24T00:00:00+00:00">Wednesday, April 24, 2013</time></h4></header><div class="entry-content"><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Cet article expose mon point de vue sur l&#8217;ergonomie, l&#8217;expérience utilisateur et les services rendues (ou pas) à l&#8217;internaute par Yahoo! Mail et Gmail. Je me base sur l&#8217;expérience de mon utilisation de Yahoo! Mail depuis 14 ans et de Gmail depuis 7 ans.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Alors que <a href="http://www.google.com/mail/help/intl/fr/about.html">Gmail</a> vient de fêter, au début du mois, <a href="http://gmailblog.blogspot.fr/2013/04/gmail-9-years-and-counting.html">ses 9 ans d&#8217;existence</a>, Yahoo! a sorti fin 2012 la dernière version de Yahoo! Mail créé en 1997. C&#8217;est l''occasion de faire un bilan de ces 2 acteurs principaux sur ce marché du webmail gratuit (Il ne sera pas question du 3e acteur, Hotmail, car je ne l&#8217;ai jamais testé). Il faut savoir que ces 3 acteurs revendiquent <strong>chacun plus de 280 millions d&#8217;utilisateurs</strong> dans le monde !</p>
+</div>
+<div class="paragraph">
+<p></div><footer class="entry-footer"><div class="tags"><span class="title">tags:</span><a href="/posts/tags/"> </a><a href="/posts/tags/"> </a></div></footer></article><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported/">JBoss EAP 4.3 / 5.1 / 6 &#8658; Java EE supported standards in each EAP releases</a></h1><h4><time class="pubdate" datetime="2012-11-30T00:00:00+00:00">Friday, November 30, 2012</time></h4></header><div class="entry-content"><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Langage EN / Timereading 5mn
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+This post presents, as a diagram, all Java EE standards supported in each JBoss EAP version.
+The following data are based on Red Hat official documentation.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can click on each component to access the Java Specification Requests (JSRs) details or move to the complete lists.</p>
+</div>
+</div>
+</div></div><footer class="entry-footer"><div class="tags"><span class="title">tags:</span><a href="/posts/tags/"> </a><a href="/posts/tags/"> </a><a href="/posts/tags/"> </a></div></footer></article><article class="post"><header class="entry-header"><h1 class="title"><a href="/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN/">Corriger les propriétés d&#8217;une révision Subversion</a></h1><h4><time class="pubdate" datetime="2012-07-30T00:00:00+00:00">Monday, July 30, 2012</time></h4></header><div class="entry-content"><div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Lecture 10mn / Langage FR
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Ce post explique comment mettre à jour les propriétés SVN d&#8217;une révision donnée d&#8217;un repository. Et notamment la propriété svn:date qui, lorsqu&#8217;elle est absente sur certaines révisions, bloque les checkout via le client SVNKit (utilisé par défaut dans le plugin Subversion de Jenkins CI).
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p></div><footer class="entry-footer"><div class="tags"><span class="title">tags:</span><a href="/posts/tags/"> </a><a href="/posts/tags/"> </a></div></footer></article><div class="pagination"><div class="previous" style="width:50%; float: left"></div><div class="next" style="width:50%; float: right; text-align: right"></div></div></div></div></div><footer id="footer"><div class="container"><div class="row-fluid pull-center"><div id="contact" class="social-media"><a title="My Twitter account - @mgreau" href="https://twitter.com/mgreau"><i class="icomoon-twitter-3"></i></a><a title="My G+ account"  href="https://plus.google.com/u/0/110674805154532168093/posts/p/pub"><i class="icomoon-google-plus-4"></i></a><a title="My Github account - mgreau"  href="https://github.com/mgreau"><i class="icomoon-github-3"></i></a><a title="My LinkedIn account"  href="https://fr.linkedin.com/in/mgreau"><i class="icomoon-linkedin"></i></a></div><p>Copyright 2013 © <a href="http://mgreau.com">mgreau.com</a></p></div></div>    </footer><script type="text/javascript"></script><script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount','UA-20147445-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script src="/javascripts/jquery.js"></script><script src="/javascripts/bootstrap.min.js"></script><script src="/plugins/flexslider/jquery.flexslider-min.js"></script><script src="/plugins/jPanelMenu/jquery.jpanelmenu.min.js"></script><script src="/plugins/jRespond/js/jRespond.js"></script><script src="/plugins/onePageNav/jquery.scrollTo.js"></script><script src="/plugins/onePageNav/jquery.nav.js"></script><script src="/javascripts/script.js"></script></body></html>
