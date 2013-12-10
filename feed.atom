@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
-  <id>http://mgreau.com/</id>
+  <id>http://mgreau.github.io/</id>
   <title>mgreau Blog</title>
   <author>
     <name>Maxime Gréau</name>
   </author>
   <updated>2013-11-10T12:16:32+01:00</updated>
-  <link href="http://mgreau.com/feed.atom" rel="self" type="application/atom+xml" />
-  <link href="http://mgreau.com/" rel="alternate" type="text/html" />
+  <link href="http://mgreau.github.io/feed.atom" rel="self" type="application/atom+xml" />
+  <link href="http://mgreau.github.io/" rel="alternate" type="text/html" />
   <entry>
-    <id>http://mgreau.com/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html</id>
+    <id>http://mgreau.github.io/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html</id>
     <title>Java EE 7 and WebSocket API for Java (JSR 356) with AngularJS on WildFly</title>
     <updated>2013-11-10T12:16:32+01:00</updated>
     <published>2013-11-11T00:00:00+00:00</published>
-    <link href="http://mgreau.com/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.github.io/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Greau</name>
     </author>
@@ -149,7 +149,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;javaee7_intro&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/javaee7_intro.png&quot; alt=&quot;Java EE 7 goals&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/javaee7_intro.png&quot; alt=&quot;Java EE 7 goals&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 1. The 3 goals of Java EE 7&lt;/div&gt;
       &lt;/div&gt;
@@ -236,7 +236,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;websocket_example&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;a class=&quot;image&quot; href=&quot;http://wildfly-mgreau.rhcloud.com/usopen/live.html&quot;&gt;&lt;img src=&quot;http://mgreau.com/images/posts/websocket_wildfly_angularjs_tennis.png&quot; alt=&quot;Implementation of WebSocket (Java API et Javascript API)&quot;&gt;&lt;/a&gt;
+      &lt;a class=&quot;image&quot; href=&quot;http://wildfly-mgreau.rhcloud.com/usopen/live.html&quot;&gt;&lt;img src=&quot;http://mgreau.github.io/images/posts/websocket_wildfly_angularjs_tennis.png&quot; alt=&quot;Implementation of WebSocket (Java API et Javascript API)&quot;&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 2. US Open Application  - Implementation of WebSocket (Java API et Javascript API)&lt;/div&gt;
       &lt;/div&gt;
@@ -323,7 +323,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;websocket_protocol&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/WebSocket_Protocol.png&quot; alt=&quot;Diagram which explain how does the WebSocket protocol work&quot; width=&quot;550&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/WebSocket_Protocol.png&quot; alt=&quot;Diagram which explain how does the WebSocket protocol work&quot; width=&quot;550&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 3. How does the WebSocket protocol work&lt;/div&gt;
       &lt;/div&gt;
@@ -1446,11 +1446,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.com/posts/2013/09/27/javaee7-api-websocket-html5.html</id>
+    <id>http://mgreau.github.io/posts/2013/09/27/javaee7-api-websocket-html5.html</id>
     <title>Java EE 7 et l&#8217;API Java pour WebSocket (JSR 356)</title>
     <updated>2013-10-26T21:36:50+02:00</updated>
     <published>2013-09-27T00:00:00+00:00</published>
-    <link href="http://mgreau.com/posts/2013/09/27/javaee7-api-websocket-html5.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.github.io/posts/2013/09/27/javaee7-api-websocket-html5.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -1579,7 +1579,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;javaee7_intro&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/javaee7_intro.png&quot; alt=&quot;Java EE 7 - Objectifs&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/javaee7_intro.png&quot; alt=&quot;Java EE 7 - Objectifs&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 1. Les 3 objectifs de Java EE 7&lt;/div&gt;
       &lt;/div&gt;
@@ -1646,7 +1646,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;websocket_example&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;a class=&quot;image&quot; href=&quot;http://wildfly-mgreau.rhcloud.com/usopen/&quot;&gt;&lt;img src=&quot;http://mgreau.com/images/posts/websocket_example.png&quot; alt=&quot;Mise en oeuvre des WebSocket (Java API et Javascript API)&quot;&gt;&lt;/a&gt;
+      &lt;a class=&quot;image&quot; href=&quot;http://wildfly-mgreau.rhcloud.com/usopen/&quot;&gt;&lt;img src=&quot;http://mgreau.github.io/images/posts/websocket_example.png&quot; alt=&quot;Mise en oeuvre des WebSocket (Java API et Javascript API)&quot;&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 2. Mise en oeuvre des WebSocket (Java API et Javascript API)&lt;/div&gt;
       &lt;/div&gt;
@@ -1733,7 +1733,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;websocket_protocol&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/WebSocket_Protocol.png&quot; alt=&quot;Schéma d'explications du protocole WebSocket&quot; width=&quot;550&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/WebSocket_Protocol.png&quot; alt=&quot;Schéma d'explications du protocole WebSocket&quot; width=&quot;550&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 3. Explication du protocole WebSocket&lt;/div&gt;
       &lt;/div&gt;
@@ -2684,11 +2684,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.com/posts/2013/08/26/xstream-and-JBossEAP6.html</id>
+    <id>http://mgreau.github.io/posts/2013/08/26/xstream-and-JBossEAP6.html</id>
     <title>XStream on EAP 6 with Sun14ReflectionProvider</title>
     <updated>2013-10-21T00:13:49+02:00</updated>
     <published>2013-08-26T00:00:00+00:00</published>
-    <link href="http://mgreau.com/posts/2013/08/26/xstream-and-JBossEAP6.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.github.io/posts/2013/08/26/xstream-and-JBossEAP6.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -2736,11 +2736,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.com/posts/2013/04/24/yahoomail-gmail-user-experience.html</id>
+    <id>http://mgreau.github.io/posts/2013/04/24/yahoomail-gmail-user-experience.html</id>
     <title>Yahoo! Mail, t&#8217;es une messagerie, t&#8217;as pas de conversation ? non mais allô quoi !</title>
     <updated>2013-10-21T00:13:49+02:00</updated>
     <published>2013-04-24T00:00:00+00:00</published>
-    <link href="http://mgreau.com/posts/2013/04/24/yahoomail-gmail-user-experience.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.github.io/posts/2013/04/24/yahoomail-gmail-user-experience.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -2794,7 +2794,7 @@
       &lt;/div&gt;
       &lt;div class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/Gmail_yahoo_logo.png&quot; alt=&quot;Logos Yahoo!Mail Gmail&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/Gmail_yahoo_logo.png&quot; alt=&quot;Logos Yahoo!Mail Gmail&quot;&gt;
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
@@ -2853,7 +2853,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;yahoo-rere&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/yahoo_rerere.png&quot; alt=&quot;Yahoo! Re:re:re&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/yahoo_rerere.png&quot; alt=&quot;Yahoo! Re:re:re&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 1. Exemple de discussion avec 1 ligne pour chaque message avec des &quot;Re: Re: Re: Re: Re: Re: Re:&quot;&lt;/div&gt;
       &lt;/div&gt;
@@ -2862,7 +2862,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;gmail_discussion&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/gmail_discussion.png&quot; alt=&quot;Gamil discussion&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/gmail_discussion.png&quot; alt=&quot;Gamil discussion&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 2. Même type de discussion avec Gmail et le mode conversation : 1 ligne dans la boîte de réception puis le détail lors du clic&lt;/div&gt;
       &lt;/div&gt;
@@ -2889,7 +2889,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;gmail_oups_pj&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/gmail_oups_pj.png&quot; alt=&quot;Gmail Oups PJ&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/gmail_oups_pj.png&quot; alt=&quot;Gmail Oups PJ&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 3. Boîte de dialogue pour vous prévenir que vous avez peut-être oublié la pièce jointe&lt;/div&gt;
       &lt;/div&gt;
@@ -2908,7 +2908,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;gmail_annuler_envoi&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/gmail_annuler_envoi.png&quot; alt=&quot;Gmail Annuler Envoi&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/gmail_annuler_envoi.png&quot; alt=&quot;Gmail Annuler Envoi&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 4. Vous avez un délai pour cliquer sur &quot;Annuler&quot; afin de ne pas envoyer le mail, passé ce délai le message est automatiquement réellement envoyé&lt;/div&gt;
       &lt;/div&gt;
@@ -2923,7 +2923,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;gmail_nested-labels&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/nested-labels.png&quot; alt=&quot;Gmail Labels&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/nested-labels.png&quot; alt=&quot;Gmail Labels&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 5. Gestion des labels Gmail&lt;/div&gt;
       &lt;/div&gt;
@@ -3019,11 +3019,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.com/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html</id>
+    <id>http://mgreau.github.io/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html</id>
     <title>JBoss EAP 4.3 / 5.1 / 6 - Java EE supported standards in each EAP releases</title>
     <updated>2013-12-10T16:22:41+01:00</updated>
     <published>2012-11-30T00:00:00+00:00</published>
-    <link href="http://mgreau.com/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.github.io/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -3330,11 +3330,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.com/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html</id>
+    <id>http://mgreau.github.io/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html</id>
     <title>Subversion - corriger les propriétés d&#8217;une révision SVN</title>
     <updated>2013-10-21T00:13:49+02:00</updated>
     <published>2012-07-30T00:00:00+00:00</published>
-    <link href="http://mgreau.com/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.github.io/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -3506,7 +3506,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;img-svnide&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/blog_eclipse_svn_logs1.png&quot; alt=&quot;Révisions SVN dans IDE Eclipse&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/blog_eclipse_svn_logs1.png&quot; alt=&quot;Révisions SVN dans IDE Eclipse&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 1. Révisions SVN dans IDE Eclipse&lt;/div&gt;
       &lt;/div&gt;
@@ -3570,7 +3570,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;img-svnide2&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.com/images/posts/blog_eclipse_svn_logs2.png&quot; alt=&quot;Révisions SVN OK dans IDE Eclipse&quot;&gt;
+      &lt;img src=&quot;http://mgreau.github.io/images/posts/blog_eclipse_svn_logs2.png&quot; alt=&quot;Révisions SVN OK dans IDE Eclipse&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 2. Révisions SVN OK dans IDE Eclipse&lt;/div&gt;
       &lt;/div&gt;

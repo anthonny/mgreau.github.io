@@ -1,0 +1,78 @@
+<p>A lightweight jQuery plugin for the navigation on one-page sites. Uses the <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">ScrollTo Plugin</a> plugin to add smooth scrolling when clicking on the navigation. Also adds a class to the correct navigation items as you are scrolling through the different sections.</p>
+
+<p>The plugin still works even if you add additional content to the page after the fact that changes the position of each section.</p>
+
+<h3 id="sample-markup">Sample Markup:</h3>
+<pre>&lt;ul id="nav"&gt;
+	&lt;li class="current"&gt;&lt;a href="#section-1"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#section-2"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#section-3"&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id="section-1"&gt;
+	&lt;strong&gt;Section 1&lt;/strong&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="section-2"&gt;
+	&lt;strong&gt;Section 2&lt;/strong&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="section-3"&gt;
+	&lt;strong&gt;Section 3&lt;/strong&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+<h3 id="example-usage-with-defaults">Example Usage with Defaults:</h3>
+<pre>$('#nav').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 750,
+	scrollOffset: 30,
+	scrollThreshold: 0.5,
+	filter: '',
+	easing: 'swing',
+	begin: function() {
+		//I get fired when the animation is starting
+	},
+	end: function() {
+		//I get fired when the animation is ending
+	},
+	scrollChange: function($currentListItem) {
+		//I get fired when you enter a section and I pass the list item of the section
+	}
+});</pre>
+
+<p>If you want the hash to change when a user clicks on the navigation, then change the <strong>changeHash</strong> options to <strong>true</strong>.</p>
+
+<p>If you want to filter items out of your navigation then pass in a selector to the filter option.</p>
+
+<h3 id="filter-example">Filter Example:</h3>
+<pre>&lt;ul id="nav"&gt;
+	&lt;li class="current"&gt;&lt;a href="#section-1"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#section-2"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#section-3"&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#section-4"&gt;Section 4&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#section-5"&gt;Section 5&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="http://google.com" class="external"&gt;Some other link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+  
+$('#nav').onePageNav({
+	filter: ':not(.external)'
+});</pre>
+
+<h3 id="if-you-are-having-issues-with-ios-devices">If you are having issues with iOS devices</h3>
+<p>If clicking a link in the nav makes the rest of the links unclickable until you scroll, you can solve it in this hacky way:</p>
+
+<pre>$('#nav').onePageNav({
+	begin: function() {
+		//Hack so you can click other menu items after the initial click
+		$('body').append('&lt;div id="device-dummy" style="height: 1px;"&gt;&lt;/div&gt;');
+	},
+	end: function() {
+		$('#device-dummy').remove();
+	}
+});</pre>
+
+<p>Found the solution <a href="http://stackoverflow.com/a/10030251">here</a></p>
