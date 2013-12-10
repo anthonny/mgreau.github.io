@@ -1,19 +1,330 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
-  <id>http://mgreau.github.io/</id>
+  <id>http://mgreau.com/</id>
   <title>mgreau Blog</title>
   <author>
     <name>Maxime Gréau</name>
   </author>
-  <updated>2013-11-10T12:16:32+01:00</updated>
-  <link href="http://mgreau.github.io/feed.atom" rel="self" type="application/atom+xml" />
-  <link href="http://mgreau.github.io/" rel="alternate" type="text/html" />
+  <updated>2013-12-10T17:20:33+01:00</updated>
+  <link href="http://mgreau.com/feed.atom" rel="self" type="application/atom+xml" />
+  <link href="http://mgreau.com/" rel="alternate" type="text/html" />
   <entry>
-    <id>http://mgreau.github.io/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html</id>
+    <id>http://mgreau.com/posts/2013/12/10/jboss-eap-62-51-43-javaee-supported.html</id>
+    <title>JBoss EAP 4.3 / 5.1 / 6 - Java EE supported standards in each EAP releases</title>
+    <updated>2013-12-10T17:20:33+01:00</updated>
+    <published>2013-12-10T00:00:00+00:00</published>
+    <link href="http://mgreau.com/posts/2013/12/10/jboss-eap-62-51-43-javaee-supported.html" rel="alternate" type="text/html" />
+    <author>
+      <name>Maxime Gréau</name>
+    </author>
+    <category term="jboss-eap"></category>
+    <category term="javaee"></category>
+    <category term="jsr"></category>
+    <summary>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      Language EN / Timereading 5 mn
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      This post presents, as a diagram, all Java EE standards supported in each JBoss EAP version :
+      
+      
+      
+      This diagram was updated in December 2013 (fixes and addition of (*) information)
+      
+      
+      Thanks to Arun Gupta for the fixes
+      
+      
+      The following data are based on official documentation from Oracle (JSR) and Red Hat (EAP).
+      
+      
+      
+      
+      
+      
+      
+      
+      pass::[more]
+      
+      
+      You can click on each component to access the Java Specification Requests (JSRs) details or move to the complete lists.
+      
+      7V1tc+I4Ev41qbrbqqGsF0v2R4aEvZ3aqU1t5m72qwMOeJZgzphNZn/9Sn7DLYlXGeN4wlRlQAYbWo+7n251q2/I6Pn15yRYzT/H03Bxg53p6w25vcHYcxzxVw58VwZmSTTNh1AxsImm4RoMpXG8SKMVHJzEy2U4ScHYU7yAJ1sFs1AbeJgEC330azRN58WXw2w7/p8wms3LyyDm50fW6ffyHNPwKdgs0g/ZEM4PvzrFmfKX34uXmJbnXYLr/x3Hz2AgCdfR3/A7PkXFlygE9xgn0zABQ4to+WddSOTuhoySOE7zZ8+vo3AhZ6WUeP6x8Y6jlWyScJke8wGSf+CvYLEpvromq6dosRjFizj/3mQ89sXjhnxcp0n8Z1geWcbLsDhXmKTh687vs/2VAndh/BymyXcp/eJoIZYScu7AqT1Qcb6X7bwjXKJyXpt07tKBX3/kbwkKSc+q625FI54U0jFLip8sKcY+4vH4UpLCUDSOBwSHPEcTFaWKUKguOEYce1F5Z4BKwupSouK+D344Oigq4kPp4gtJCrGTReX7lxQV5c4RwjHcceeI47/rMPnt8Zu0CEIRBo/C/GQf/fQxXq/F0N0yTcJVEq3FL3OGq9UimgRpFC/Fq/tFkD7FybN4+q+74f2/b6T6J6+BkEuwnEoBblarWAhCPv8U/BXI092JPw+pOB4k0/VW/eYXnaeptFZD+WXxOJhMwvV6kITTeZAOJkLV4/Gfy/hlEU6FdRLHkzSaLITNw2OECOGFHq3m1atJuZjz2pQm8WY5DeV7kfjCqtrw5T8xPkuCaSTmDUy+RKN58sWJYvDmcfYoxh+Kq6Pi9Th4jhZykr8E8/g5KN+VWzDkNQAlQuBd5xGALEV/IR9rQHNdA9C803EmXtagdhz0hvfiLx0QE0wqlLy8vECIrJJ4upmkEhbfHsWZhKjCJEPwczSdLsIXIT2Jni2WP6wqJI8VDPkWGBKPDCcqhgqkXBw+4hLzYBq/ZB+xx5LPoFri1NWZgEkttYkWd4Cuh5bccJyHFkL6hRbX9eqax2MKdvDArWmeDiKJDfAVkUTOR5LjMDYa9QdJiKh6x+hXXBk7OGM2aEBrLGgkfnb0FEn+swdI3yarQZzMxLNwKV+uE/F3GqZBJM49zhCBXATxkRvl8/BRza2B21THIEgy1iN5j44UMH4aUmgTRknhykxxMwzg4CbmfFlwDP/48PVB0uSf6iQZDxxbYFSRkQoY6HxgjMTD1gTl6vxqcECO6wBK6wJ0UJXw6ugg7aPj4cuvNVSgA3bnCFQ4LlZoLLKwJ13whZrABkHYFE8onWykWJVuYGP4x+8AG9Yaw/FVNzkX7o+NDcoYmH1XwYaiNmgnsPH5AUDjsONzBDz88rdt4eG+w4Nhf0Br8DigOjoBj4fh8BPAx/4wyjGqg3EVG288xNYENrjPTJxih+pwSBew8TV8lGHYMPkrmsj4qfNZTPQ0SIMaYG7ksqAAgZPOw238dhvztfRoPKRiySbU1hMseRwyFHIyljxzvLddX+f3+9EJlukYtDgqWrCFA9wXtPgMn6B5EO8EafkybBYavqMaJWxhlEaj8fiOHesCF/4uY53zg4miSTgF2KA+H/AaoemEUSosjLRKizCtoYTYez0EuSpKLMyNkKc5gtZOhJU2HWElMGaCCHR/XNc1xVSujJb7YbOOcZUNVEGEWgRNxng8vr07SZEQYoqvXlmRcGXRz2VQseiawyNAtTB2BQby8TKxVjWqRi1c474AxGNgna/0fUtDQ9CA1xf6mI4XBJULN+EF8l7WghnKlnNGea6kdIMqJA2TyTxKxehGLuc5QAm51kQXaRhjbxtjuAklhL06AMrMmDKJxYHwoLp5Ki8JQAWDNp5/SVDdfZIqKSMyFVzyMSwpsDZ2CWtmQYt7Y81caM2EnTrkI8F3oKtrp4d7YNWs/SdMVWZMLZhxX2kPIwdpDwUR4ivQnoexuoqYcyBLfGhriVa5B31hPRwGW7ijJxp47ftEMvam5xk04ByRMut/iwKLRAN6W+SM9MR/lg4y4BKQn3A66IbLPBw1HZfVwiquhUvUO1goRgT5BCQ9GoiqA8P37VsRkO6fLRNVeNkuFzWZq4JKzbmFkIXH0zcIMceYzlayEuzWvWvUjTBukewGSWojVERNdkN5sOAdKpm2UZf+AFSyQEydoBqUz9VC/lmsxb1E4iymKmRY65mzjmPOnJULR2dT2Bp4nCbAw2HIn/l8sD9sh9hV0cJqaBlvslm8T2IxX9JuNQYfUtYGbuFjQXvPgw/CxK90jOIBXXHxGdGTE6+vhhh9SRE3EKp1NdWC363RlrhA++O6gPuaisiva37qEX5Q5Vo7cBuuFvH3ZykCNdJiiybH81Q00fPRNKICCB9PCrN0M42Bm/2h0rP2hPBrpMbgZbtGrVSHmH9RiN2Gj5vZLFrOpBrKy6EhpvIcu9/SeSj//zVYzjbBLMvJazjvW4vzMgtXvTd5MpzuA5jL8IAbUMXNIX+w+0Wby0tqVpU1WvSsKmbhavWisIj6eyoEqI+NiOhYwM8aF3rAj1ll2/UBF0qtiOd3r8Ts1Kge+skaKFpYj1ksK/ajMpECoDDyZjjwIQJsvY6gs19uEabpo1ohBK4dEHoceDy3BfCY/GtqrUE0/5pbxF76oUGwxk47xzlG8fNz5jcPl8s4zRTIWnN3dpQU7WMquEzd2cLBItzSl8w45pE9QX/iukBpGAwOMxbEXy1PDiaxNJAHR7R61rwU4jzY9C7xHytODTQ6HLmHYrrX2C4BZsBhW4joGXDcIjLSd4goK9CUd3BDDdXttecimtvLLZIUegcRDjCBlFiIgakiGD8rNytt0SEu8rGRlnvdYo42QZrXYxFk65/i2bNbC4Xb/BjUDvIP7rPrwz3oyjWp7pWVMGukYawizSJs17/yR3PJWqXPIIumhjQr12TkWiXO+f5zn4NlMAsvEKDh6noAtwjn9c8AAoBgqKuwh035v0bIdCoKbL1hjB4E9izCen1DDfJg5aQPaRQrd7vvUp11I6xHVSWeRVyvd6DwyT5QuC4G9bQd8be0jF97p1zL9fUswn19dMrrybxKri/mAwOEehEXtmYyehzZs9pruWfqhzsAWByqH+KSQ+GergWUs80gmtVMqi/l0XcAVR1xHGb0uyvV5B0sQ0DQLTclV11YVd3+0vDWMmXUdAuZ9/BhbV9emDpV+tcVD/a6F2L+GAbSlv0vWERTNUmiiXLbssB8C5j3yOCu7aocT0mVYFekP3p3qTK1ZV97qXA5HSZJJqB9c6JKMeuDtFeG4irxJpmU7+KFLk2DZBamYFCXdhNNpIqC9CYJnF6K7r2Horb2FzkwoRkqU8zdQ31X2rw3yo2U990bMzF/q52SKbpZBo/l253TJQZFgqEz5dFDdU3E4ZAz6/KjygZ7ZVKCVdu6snBhn/D6sg+qj81zWJsGpVSE47amAWnT8FDrexdJnmDoaOZkCi/vV1U8rzoO1SZQSCW1E1HxEQ/ycg/ycm4WTE28WNDyOsp9Xbxl91c7cZIOqAQ5FXWdAJMefAebSgG6oBLoYeH1zRz6ZO9c6uzvaorCPVVR2OuE/bLx3TeiE9j1dYKrdDOGPkeHWcIRPZPbqSVtgSXs8GS6cPPrXuCBm79BZrBDLKUWIG9CC2BHJ1pX0AL78q1VYqDbnitpAVymT52tBa6+P8ExSC8g0kUFgB2d1x6jAM696XeKorzp6Ru56Y9gtJe+6X2EgDuA3obpx45OOE+76RurkmnhzqfdvfN19npqgOB8LbBDLG/N9B9BYtvQArtzLjzfuD1AF7TAEesPFy+dbEEBcPPsdUEB+GcpgPNv+h2i6LTpP9SUfSj3NeaD1/zE+5pcyt7rxSJS9lx8CTyexi/LRRxM1/nnq3bJ/HH6SAkOAkId4k0+FJO1czEpmwWB+VUwiZazL7G49u0HVwE2O2qeDixy+nvKH7jHTPvSuNzknICJgbkV1L1seXh97tzLzx3an13c2txRDgNrRJm8Q02oOz2PtIV5RN2YR4/TPQ32uGc06F2eR5nL3fzm8FqvEcOM4r0z+kP2DHAZbByrb9/gGRiKsqGd551uak9BjN5upJGdnNWSawNiLLJy+4MYJRVO6UKCNcRwAxlrve2IJTbKXU72YIO+Y4O7oHpIyYEz9iOBvJ8bHNA2GvM1WUuk5WIbsPLeow9zhvbwGLVHn6EJluI5e61rGXOZvkJlDhTrV2Nt8B2L/O4+dYas82MFdSe3XivdqOvsjXdEzb5KrJvvBmkAmkVeeF82wVKJNRLAOdBnB7PDCq3NMiWb6rjDDp1W82bAkcV+EL3BEfNNgc2q9o29tc3Usj0hKmDs2BvCmoRpe0MY0LU/qPqDbx6Nlf7q2LDBiKnxKDf2vb2cKfwsJ13ZV6uJaICP/EMAwhb7RvQnGgDjjRSCyMMH1JOy3VEnGm2bIHV5ML0HIzGncIkCKWCCjTUM3PwdTAWY3ncPqO8eoBBxaNhMdg3CsFz/aKH4zDCVepZJZt2cjJlL0v3p4Xf5MileCmGtyyZBToYrGGaonv4i0focBpLUCxofpBWbz9f76yeqPrTOcwTWxcWW4Yv+DWpvz49vz/QyjyZz+XvlCeKNvGT8VF0Xfs//b2K5ojbZ9k1z1pN4FW4PDXLRnLoK5zSAKsWZKzv6lYk3gjzVraKpWwvMVyBYxxhSM3f5OZhL4jitHfs5CVbzz/FU6qi7fwA=
+      
+      
+      
+      
+      List of all Java EE JSRs supported
+      
+      
+      Supported in JBoss EAP 4.3 / 5 /6
+      
+      
+      
+      JSR 052: A Standard Tag Library for JavaServer Pages
+      
+      
+      JSR 067: JavaTM APIs for XML Messaging...
+    </summary>
+    <content type="html">
+      &lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;admonitionblock tip&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;icon-tip&quot; title=&quot;Tip&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      Language EN / Timereading 5 mn
+      &lt;/td&gt;
+      &lt;/tr&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;admonitionblock note&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      &lt;div class=&quot;title&quot;&gt;This post presents, as a diagram, all Java EE standards supported in each JBoss EAP version :&lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;This diagram was updated in December 2013 (fixes and addition of (*) information)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Thanks to Arun Gupta for the fixes&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;The following data are based on official documentation from Oracle (JSR) and Red Hat (EAP).&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;/tr&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;pass::[more]&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can &lt;strong&gt;click on each component to access the Java Specification Requests (JSRs)&lt;/strong&gt; details or move to the complete lists.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mxgraph&quot; style=&quot;position:relative;overflow:hidden;width:1212px;height:935px;&quot;&gt;&lt;div style=&quot;width:1px;height:1px;overflow:hidden;&quot;&gt;7V1tc+I4Ev41qbrbqqGsF0v2R4aEvZ3aqU1t5m72qwMOeJZgzphNZn/9Sn7DLYlXGeN4wlRlQAYbWo+7n251q2/I6Pn15yRYzT/H03Bxg53p6w25vcHYcxzxVw58VwZmSTTNh1AxsImm4RoMpXG8SKMVHJzEy2U4ScHYU7yAJ1sFs1AbeJgEC330azRN58WXw2w7/p8wms3LyyDm50fW6ffyHNPwKdgs0g/ZEM4PvzrFmfKX34uXmJbnXYLr/x3Hz2AgCdfR3/A7PkXFlygE9xgn0zABQ4to+WddSOTuhoySOE7zZ8+vo3AhZ6WUeP6x8Y6jlWyScJke8wGSf+CvYLEpvromq6dosRjFizj/3mQ89sXjhnxcp0n8Z1geWcbLsDhXmKTh687vs/2VAndh/BymyXcp/eJoIZYScu7AqT1Qcb6X7bwjXKJyXpt07tKBX3/kbwkKSc+q625FI54U0jFLip8sKcY+4vH4UpLCUDSOBwSHPEcTFaWKUKguOEYce1F5Z4BKwupSouK+D344Oigq4kPp4gtJCrGTReX7lxQV5c4RwjHcceeI47/rMPnt8Zu0CEIRBo/C/GQf/fQxXq/F0N0yTcJVEq3FL3OGq9UimgRpFC/Fq/tFkD7FybN4+q+74f2/b6T6J6+BkEuwnEoBblarWAhCPv8U/BXI092JPw+pOB4k0/VW/eYXnaeptFZD+WXxOJhMwvV6kITTeZAOJkLV4/Gfy/hlEU6FdRLHkzSaLITNw2OECOGFHq3m1atJuZjz2pQm8WY5DeV7kfjCqtrw5T8xPkuCaSTmDUy+RKN58sWJYvDmcfYoxh+Kq6Pi9Th4jhZykr8E8/g5KN+VWzDkNQAlQuBd5xGALEV/IR9rQHNdA9C803EmXtagdhz0hvfiLx0QE0wqlLy8vECIrJJ4upmkEhbfHsWZhKjCJEPwczSdLsIXIT2Jni2WP6wqJI8VDPkWGBKPDCcqhgqkXBw+4hLzYBq/ZB+xx5LPoFri1NWZgEkttYkWd4Cuh5bccJyHFkL6hRbX9eqax2MKdvDArWmeDiKJDfAVkUTOR5LjMDYa9QdJiKh6x+hXXBk7OGM2aEBrLGgkfnb0FEn+swdI3yarQZzMxLNwKV+uE/F3GqZBJM49zhCBXATxkRvl8/BRza2B21THIEgy1iN5j44UMH4aUmgTRknhykxxMwzg4CbmfFlwDP/48PVB0uSf6iQZDxxbYFSRkQoY6HxgjMTD1gTl6vxqcECO6wBK6wJ0UJXw6ugg7aPj4cuvNVSgA3bnCFQ4LlZoLLKwJ13whZrABkHYFE8onWykWJVuYGP4x+8AG9Yaw/FVNzkX7o+NDcoYmH1XwYaiNmgnsPH5AUDjsONzBDz88rdt4eG+w4Nhf0Br8DigOjoBj4fh8BPAx/4wyjGqg3EVG288xNYENrjPTJxih+pwSBew8TV8lGHYMPkrmsj4qfNZTPQ0SIMaYG7ksqAAgZPOw238dhvztfRoPKRiySbU1hMseRwyFHIyljxzvLddX+f3+9EJlukYtDgqWrCFA9wXtPgMn6B5EO8EafkybBYavqMaJWxhlEaj8fiOHesCF/4uY53zg4miSTgF2KA+H/AaoemEUSosjLRKizCtoYTYez0EuSpKLMyNkKc5gtZOhJU2HWElMGaCCHR/XNc1xVSujJb7YbOOcZUNVEGEWgRNxng8vr07SZEQYoqvXlmRcGXRz2VQseiawyNAtTB2BQby8TKxVjWqRi1c474AxGNgna/0fUtDQ9CA1xf6mI4XBJULN+EF8l7WghnKlnNGea6kdIMqJA2TyTxKxehGLuc5QAm51kQXaRhjbxtjuAklhL06AMrMmDKJxYHwoLp5Ki8JQAWDNp5/SVDdfZIqKSMyFVzyMSwpsDZ2CWtmQYt7Y81caM2EnTrkI8F3oKtrp4d7YNWs/SdMVWZMLZhxX2kPIwdpDwUR4ivQnoexuoqYcyBLfGhriVa5B31hPRwGW7ijJxp47ftEMvam5xk04ByRMut/iwKLRAN6W+SM9MR/lg4y4BKQn3A66IbLPBw1HZfVwiquhUvUO1goRgT5BCQ9GoiqA8P37VsRkO6fLRNVeNkuFzWZq4JKzbmFkIXH0zcIMceYzlayEuzWvWvUjTBukewGSWojVERNdkN5sOAdKpm2UZf+AFSyQEydoBqUz9VC/lmsxb1E4iymKmRY65mzjmPOnJULR2dT2Bp4nCbAw2HIn/l8sD9sh9hV0cJqaBlvslm8T2IxX9JuNQYfUtYGbuFjQXvPgw/CxK90jOIBXXHxGdGTE6+vhhh9SRE3EKp1NdWC363RlrhA++O6gPuaisiva37qEX5Q5Vo7cBuuFvH3ZykCNdJiiybH81Q00fPRNKICCB9PCrN0M42Bm/2h0rP2hPBrpMbgZbtGrVSHmH9RiN2Gj5vZLFrOpBrKy6EhpvIcu9/SeSj//zVYzjbBLMvJazjvW4vzMgtXvTd5MpzuA5jL8IAbUMXNIX+w+0Wby0tqVpU1WvSsKmbhavWisIj6eyoEqI+NiOhYwM8aF3rAj1ll2/UBF0qtiOd3r8Ts1Kge+skaKFpYj1ksK/ajMpECoDDyZjjwIQJsvY6gs19uEabpo1ohBK4dEHoceDy3BfCY/GtqrUE0/5pbxF76oUGwxk47xzlG8fNz5jcPl8s4zRTIWnN3dpQU7WMquEzd2cLBItzSl8w45pE9QX/iukBpGAwOMxbEXy1PDiaxNJAHR7R61rwU4jzY9C7xHytODTQ6HLmHYrrX2C4BZsBhW4joGXDcIjLSd4goK9CUd3BDDdXttecimtvLLZIUegcRDjCBlFiIgakiGD8rNytt0SEu8rGRlnvdYo42QZrXYxFk65/i2bNbC4Xb/BjUDvIP7rPrwz3oyjWp7pWVMGukYawizSJs17/yR3PJWqXPIIumhjQr12TkWiXO+f5zn4NlMAsvEKDh6noAtwjn9c8AAoBgqKuwh035v0bIdCoKbL1hjB4E9izCen1DDfJg5aQPaRQrd7vvUp11I6xHVSWeRVyvd6DwyT5QuC4G9bQd8be0jF97p1zL9fUswn19dMrrybxKri/mAwOEehEXtmYyehzZs9pruWfqhzsAWByqH+KSQ+GergWUs80gmtVMqi/l0XcAVR1xHGb0uyvV5B0sQ0DQLTclV11YVd3+0vDWMmXUdAuZ9/BhbV9emDpV+tcVD/a6F2L+GAbSlv0vWERTNUmiiXLbssB8C5j3yOCu7aocT0mVYFekP3p3qTK1ZV97qXA5HSZJJqB9c6JKMeuDtFeG4irxJpmU7+KFLk2DZBamYFCXdhNNpIqC9CYJnF6K7r2Horb2FzkwoRkqU8zdQ31X2rw3yo2U990bMzF/q52SKbpZBo/l253TJQZFgqEz5dFDdU3E4ZAz6/KjygZ7ZVKCVdu6snBhn/D6sg+qj81zWJsGpVSE47amAWnT8FDrexdJnmDoaOZkCi/vV1U8rzoO1SZQSCW1E1HxEQ/ycg/ycm4WTE28WNDyOsp9Xbxl91c7cZIOqAQ5FXWdAJMefAebSgG6oBLoYeH1zRz6ZO9c6uzvaorCPVVR2OuE/bLx3TeiE9j1dYKrdDOGPkeHWcIRPZPbqSVtgSXs8GS6cPPrXuCBm79BZrBDLKUWIG9CC2BHJ1pX0AL78q1VYqDbnitpAVymT52tBa6+P8ExSC8g0kUFgB2d1x6jAM696XeKorzp6Ru56Y9gtJe+6X2EgDuA3obpx45OOE+76RurkmnhzqfdvfN19npqgOB8LbBDLG/N9B9BYtvQArtzLjzfuD1AF7TAEesPFy+dbEEBcPPsdUEB+GcpgPNv+h2i6LTpP9SUfSj3NeaD1/zE+5pcyt7rxSJS9lx8CTyexi/LRRxM1/nnq3bJ/HH6SAkOAkId4k0+FJO1czEpmwWB+VUwiZazL7G49u0HVwE2O2qeDixy+nvKH7jHTPvSuNzknICJgbkV1L1seXh97tzLzx3an13c2txRDgNrRJm8Q02oOz2PtIV5RN2YR4/TPQ32uGc06F2eR5nL3fzm8FqvEcOM4r0z+kP2DHAZbByrb9/gGRiKsqGd551uak9BjN5upJGdnNWSawNiLLJy+4MYJRVO6UKCNcRwAxlrve2IJTbKXU72YIO+Y4O7oHpIyYEz9iOBvJ8bHNA2GvM1WUuk5WIbsPLeow9zhvbwGLVHn6EJluI5e61rGXOZvkJlDhTrV2Nt8B2L/O4+dYas82MFdSe3XivdqOvsjXdEzb5KrJvvBmkAmkVeeF82wVKJNRLAOdBnB7PDCq3NMiWb6rjDDp1W82bAkcV+EL3BEfNNgc2q9o29tc3Usj0hKmDs2BvCmoRpe0MY0LU/qPqDbx6Nlf7q2LDBiKnxKDf2vb2cKfwsJ13ZV6uJaICP/EMAwhb7RvQnGgDjjRSCyMMH1JOy3VEnGm2bIHV5ML0HIzGncIkCKWCCjTUM3PwdTAWY3ncPqO8eoBBxaNhMdg3CsFz/aKH4zDCVepZJZt2cjJlL0v3p4Xf5MileCmGtyyZBToYrGGaonv4i0focBpLUCxofpBWbz9f76yeqPrTOcwTWxcWW4Yv+DWpvz49vz/QyjyZz+XvlCeKNvGT8VF0Xfs//b2K5ojbZ9k1z1pN4FW4PDXLRnLoK5zSAKsWZKzv6lYk3gjzVraKpWwvMVyBYxxhSM3f5OZhL4jitHfs5CVbzz/FU6qi7fwA=&lt;/div&gt;&lt;/div&gt;
+      &lt;script src=&quot;//drawdotio.appspot.com/embed.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;list-of-all-java-ee-jsrs-supported&quot;&gt;List of all Java EE JSRs supported&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;supported-in-jboss-eap-4-3-5-6&quot;&gt;Supported in JBoss EAP 4.3 / 5 /6&lt;/h3&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=052&quot;&gt;JSR 052: A Standard Tag Library for JavaServer Pages&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=067&quot;&gt;JSR 067: JavaTM APIs for XML Messaging 1.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=093&quot;&gt;JSR 093: JavaTM API for XML Registries 1.0 (JAXR)&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=101&quot;&gt;JSR 101: JavaTM APIs for XML based RPC&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=153&quot;&gt;JSR 153: Enterprise JavaBeansTM 2.1&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=181&quot;&gt;JSR 181: Web Services Metadata for the JavaTM Platform&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=220&quot;&gt;JSR 220: Enterprise JavaBeansTM 3.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=914&quot;&gt;JSR 914: JavaTM Message Service (JMS) API&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=919&quot;&gt;JSR 919: JavaMail&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;supported-in-jboss-eap-4-3&quot;&gt;Supported in JBoss EAP 4.3&lt;/h3&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=151&quot;&gt;JSR 151: JavaTM 2 Platform, Enterprise Edition 1.4 (J2EE 1.4) Specification&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=088&quot;&gt;JSR 88: JavaTM EE Application Deployment&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=109&quot;&gt;JSR 109: Implementing Enterprise Web Services&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=115&quot;&gt;JSR 115: JavaTM Authorization Contract for Containers&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=154&quot;&gt;JSR 154: JavaTM Servlet 2.4 Specification&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=224&quot;&gt;JSR 224: JavaTM API for XML-Based Web Services (JAX-WS) 2.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=907&quot;&gt;JSR 907: JavaTM Transaction API (JTA)&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;supported-in-jboss-eap-4-3-5-1&quot;&gt;Supported in JBoss EAP 4.3 / 5.1&lt;/h3&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=077&quot;&gt;JSR 077: J2EETM Management&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=112&quot;&gt;JSR 112: J2EETM Connector Architecture 1.5&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=220&quot;&gt;JSR 220: Enterprise JavaBeansTM 3.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=222&quot;&gt;JSR 222: JavaTM Architecture for XML Binding (JAXB) 2.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=245&quot;&gt;JSR 245: JavaServerTM Pages 2.1&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=250&quot;&gt;JSR 250: Common Annotations for the JavaTM Platform&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=252&quot;&gt;JSR 252: JavaServer Faces 1.2&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;supported-in-jboss-eap-5-1&quot;&gt;Supported in JBoss EAP 5.1&lt;/h3&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=244&quot;&gt;JSR 244: JavaTM Platform, Enterprise Edition 5 (Java EE 5) Specification&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=109&quot;&gt;JSR 109: Implementing Enterprise Web Services&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=115&quot;&gt;JSR 115: JavaTM Authorization Contract for Containers&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=154&quot;&gt;JSR 154: JavaTM Servlet 2.4 Specification&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=224&quot;&gt;JSR 224: JavaTM API for XML-Based Web Services (JAX-WS) 2.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=311&quot;&gt;JSR 311: JAX-RS: The JavaTM API for RESTful Web Services&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;supported-in-jboss-eap-5-1-6&quot;&gt;Supported in JBoss EAP 5.1 / 6&lt;/h3&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=045&quot;&gt;JSR 045: Debugging Support for Other Languages&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=088&quot;&gt;JSR 088: JavaTM EE Application Deployment&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=907&quot;&gt;JSR 907: JavaTM Transaction API (JTA)&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;supported-in-jboss-eap-6&quot;&gt;Supported in JBoss EAP 6&lt;/h3&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=316&quot;&gt;JSR 316: JavaTM Platform, Enterprise Edition 6 (Java EE 6) Specification&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=077&quot;&gt;JSR 077: J2EETM Management&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=109&quot;&gt;JSR 109: Implementing Enterprise Web Services&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=115&quot;&gt;JSR 115: JavaTM Authorization Contract for Containers&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=222&quot;&gt;JSR 222: JavaTM Architecture for XML Binding (JAXB) 2.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=224&quot;&gt;JSR 224: JavaTM API for XML-Based Web Services (JAX-WS) 2.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=245&quot;&gt;JSR 245: JavaServerTM Pages 2.1&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=250&quot;&gt;JSR 250: Common Annotations for the JavaTM Platform&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=299&quot;&gt;JSR 299: Contexts and Dependency Injection for the JavaTM EE platform&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=303&quot;&gt;JSR 303: Bean Validation&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=311&quot;&gt;JSR 311: JAX-RS: The JavaTM API for RESTful Web Services&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=314&quot;&gt;JSR 314: JavaServer Faces 2.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=315&quot;&gt;JSR 315: JavaTM Servlet 3.0 Specification&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=317&quot;&gt;JSR 317: JavaTM Persistence 2.0&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jcp.org/en/jsr/detail?id=322&quot;&gt;JSR 322: JavaTM EE Connector Architecture 1.6&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>http://mgreau.com/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html</id>
     <title>Java EE 7 and WebSocket API for Java (JSR 356) with AngularJS on WildFly</title>
     <updated>2013-11-10T12:16:32+01:00</updated>
     <published>2013-11-11T00:00:00+00:00</published>
-    <link href="http://mgreau.github.io/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.com/posts/2013/11/11/javaee7-websocket-angularjs-wildfly.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Greau</name>
     </author>
@@ -149,7 +460,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;javaee7_intro&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/javaee7_intro.png&quot; alt=&quot;Java EE 7 goals&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/javaee7_intro.png&quot; alt=&quot;Java EE 7 goals&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 1. The 3 goals of Java EE 7&lt;/div&gt;
       &lt;/div&gt;
@@ -236,7 +547,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;websocket_example&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;a class=&quot;image&quot; href=&quot;http://wildfly-mgreau.rhcloud.com/usopen/live.html&quot;&gt;&lt;img src=&quot;http://mgreau.github.io/images/posts/websocket_wildfly_angularjs_tennis.png&quot; alt=&quot;Implementation of WebSocket (Java API et Javascript API)&quot;&gt;&lt;/a&gt;
+      &lt;a class=&quot;image&quot; href=&quot;http://wildfly-mgreau.rhcloud.com/usopen/live.html&quot;&gt;&lt;img src=&quot;http://mgreau.com/images/posts/websocket_wildfly_angularjs_tennis.png&quot; alt=&quot;Implementation of WebSocket (Java API et Javascript API)&quot;&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 2. US Open Application  - Implementation of WebSocket (Java API et Javascript API)&lt;/div&gt;
       &lt;/div&gt;
@@ -323,7 +634,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;websocket_protocol&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/WebSocket_Protocol.png&quot; alt=&quot;Diagram which explain how does the WebSocket protocol work&quot; width=&quot;550&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/WebSocket_Protocol.png&quot; alt=&quot;Diagram which explain how does the WebSocket protocol work&quot; width=&quot;550&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 3. How does the WebSocket protocol work&lt;/div&gt;
       &lt;/div&gt;
@@ -1446,11 +1757,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.github.io/posts/2013/09/27/javaee7-api-websocket-html5.html</id>
+    <id>http://mgreau.com/posts/2013/09/27/javaee7-api-websocket-html5.html</id>
     <title>Java EE 7 et l&#8217;API Java pour WebSocket (JSR 356)</title>
     <updated>2013-10-26T21:36:50+02:00</updated>
     <published>2013-09-27T00:00:00+00:00</published>
-    <link href="http://mgreau.github.io/posts/2013/09/27/javaee7-api-websocket-html5.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.com/posts/2013/09/27/javaee7-api-websocket-html5.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -1579,7 +1890,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;javaee7_intro&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/javaee7_intro.png&quot; alt=&quot;Java EE 7 - Objectifs&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/javaee7_intro.png&quot; alt=&quot;Java EE 7 - Objectifs&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 1. Les 3 objectifs de Java EE 7&lt;/div&gt;
       &lt;/div&gt;
@@ -1646,7 +1957,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;websocket_example&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;a class=&quot;image&quot; href=&quot;http://wildfly-mgreau.rhcloud.com/usopen/&quot;&gt;&lt;img src=&quot;http://mgreau.github.io/images/posts/websocket_example.png&quot; alt=&quot;Mise en oeuvre des WebSocket (Java API et Javascript API)&quot;&gt;&lt;/a&gt;
+      &lt;a class=&quot;image&quot; href=&quot;http://wildfly-mgreau.rhcloud.com/usopen/&quot;&gt;&lt;img src=&quot;http://mgreau.com/images/posts/websocket_example.png&quot; alt=&quot;Mise en oeuvre des WebSocket (Java API et Javascript API)&quot;&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 2. Mise en oeuvre des WebSocket (Java API et Javascript API)&lt;/div&gt;
       &lt;/div&gt;
@@ -1733,7 +2044,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;websocket_protocol&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/WebSocket_Protocol.png&quot; alt=&quot;Schéma d'explications du protocole WebSocket&quot; width=&quot;550&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/WebSocket_Protocol.png&quot; alt=&quot;Schéma d'explications du protocole WebSocket&quot; width=&quot;550&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 3. Explication du protocole WebSocket&lt;/div&gt;
       &lt;/div&gt;
@@ -2684,11 +2995,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.github.io/posts/2013/08/26/xstream-and-JBossEAP6.html</id>
+    <id>http://mgreau.com/posts/2013/08/26/xstream-and-JBossEAP6.html</id>
     <title>XStream on EAP 6 with Sun14ReflectionProvider</title>
     <updated>2013-10-21T00:13:49+02:00</updated>
     <published>2013-08-26T00:00:00+00:00</published>
-    <link href="http://mgreau.github.io/posts/2013/08/26/xstream-and-JBossEAP6.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.com/posts/2013/08/26/xstream-and-JBossEAP6.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -2736,11 +3047,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.github.io/posts/2013/04/24/yahoomail-gmail-user-experience.html</id>
+    <id>http://mgreau.com/posts/2013/04/24/yahoomail-gmail-user-experience.html</id>
     <title>Yahoo! Mail, t&#8217;es une messagerie, t&#8217;as pas de conversation ? non mais allô quoi !</title>
     <updated>2013-10-21T00:13:49+02:00</updated>
     <published>2013-04-24T00:00:00+00:00</published>
-    <link href="http://mgreau.github.io/posts/2013/04/24/yahoomail-gmail-user-experience.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.com/posts/2013/04/24/yahoomail-gmail-user-experience.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -2794,7 +3105,7 @@
       &lt;/div&gt;
       &lt;div class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/Gmail_yahoo_logo.png&quot; alt=&quot;Logos Yahoo!Mail Gmail&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/Gmail_yahoo_logo.png&quot; alt=&quot;Logos Yahoo!Mail Gmail&quot;&gt;
       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;paragraph&quot;&gt;
@@ -2853,7 +3164,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;yahoo-rere&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/yahoo_rerere.png&quot; alt=&quot;Yahoo! Re:re:re&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/yahoo_rerere.png&quot; alt=&quot;Yahoo! Re:re:re&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 1. Exemple de discussion avec 1 ligne pour chaque message avec des &quot;Re: Re: Re: Re: Re: Re: Re:&quot;&lt;/div&gt;
       &lt;/div&gt;
@@ -2862,7 +3173,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;gmail_discussion&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/gmail_discussion.png&quot; alt=&quot;Gamil discussion&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/gmail_discussion.png&quot; alt=&quot;Gamil discussion&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 2. Même type de discussion avec Gmail et le mode conversation : 1 ligne dans la boîte de réception puis le détail lors du clic&lt;/div&gt;
       &lt;/div&gt;
@@ -2889,7 +3200,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;gmail_oups_pj&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/gmail_oups_pj.png&quot; alt=&quot;Gmail Oups PJ&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/gmail_oups_pj.png&quot; alt=&quot;Gmail Oups PJ&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 3. Boîte de dialogue pour vous prévenir que vous avez peut-être oublié la pièce jointe&lt;/div&gt;
       &lt;/div&gt;
@@ -2908,7 +3219,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;gmail_annuler_envoi&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/gmail_annuler_envoi.png&quot; alt=&quot;Gmail Annuler Envoi&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/gmail_annuler_envoi.png&quot; alt=&quot;Gmail Annuler Envoi&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 4. Vous avez un délai pour cliquer sur &quot;Annuler&quot; afin de ne pas envoyer le mail, passé ce délai le message est automatiquement réellement envoyé&lt;/div&gt;
       &lt;/div&gt;
@@ -2923,7 +3234,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;gmail_nested-labels&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/nested-labels.png&quot; alt=&quot;Gmail Labels&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/nested-labels.png&quot; alt=&quot;Gmail Labels&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 5. Gestion des labels Gmail&lt;/div&gt;
       &lt;/div&gt;
@@ -3019,11 +3330,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.github.io/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html</id>
+    <id>http://mgreau.com/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html</id>
     <title>JBoss EAP 4.3 / 5.1 / 6 - Java EE supported standards in each EAP releases</title>
     <updated>2013-12-10T16:22:41+01:00</updated>
     <published>2012-11-30T00:00:00+00:00</published>
-    <link href="http://mgreau.github.io/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.com/posts/2012/11/30/jboss-eap-43-51-6-java-ee-supported.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -3330,11 +3641,11 @@
     </content>
   </entry>
   <entry>
-    <id>http://mgreau.github.io/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html</id>
+    <id>http://mgreau.com/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html</id>
     <title>Subversion - corriger les propriétés d&#8217;une révision SVN</title>
     <updated>2013-10-21T00:13:49+02:00</updated>
     <published>2012-07-30T00:00:00+00:00</published>
-    <link href="http://mgreau.github.io/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html" rel="alternate" type="text/html" />
+    <link href="http://mgreau.com/posts/2012/07/30/corriger-les-proprietes-des-revisions-SVN.html" rel="alternate" type="text/html" />
     <author>
       <name>Maxime Gréau</name>
     </author>
@@ -3506,7 +3817,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;img-svnide&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/blog_eclipse_svn_logs1.png&quot; alt=&quot;Révisions SVN dans IDE Eclipse&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/blog_eclipse_svn_logs1.png&quot; alt=&quot;Révisions SVN dans IDE Eclipse&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 1. Révisions SVN dans IDE Eclipse&lt;/div&gt;
       &lt;/div&gt;
@@ -3570,7 +3881,7 @@
       &lt;/div&gt;
       &lt;div id=&quot;img-svnide2&quot; class=&quot;imageblock&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
-      &lt;img src=&quot;http://mgreau.github.io/images/posts/blog_eclipse_svn_logs2.png&quot; alt=&quot;Révisions SVN OK dans IDE Eclipse&quot;&gt;
+      &lt;img src=&quot;http://mgreau.com/images/posts/blog_eclipse_svn_logs2.png&quot; alt=&quot;Révisions SVN OK dans IDE Eclipse&quot;&gt;
       &lt;/div&gt;
       &lt;div class=&quot;title&quot;&gt;Figure 2. Révisions SVN OK dans IDE Eclipse&lt;/div&gt;
       &lt;/div&gt;
